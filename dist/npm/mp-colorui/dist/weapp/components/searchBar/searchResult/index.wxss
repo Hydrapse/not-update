@@ -1,0 +1,24 @@
+.cl_search_result {
+  width: 100%; }
+  .cl_search_result.solid-bottom:last-child {
+    border-bottom: none; }
+  .cl_search_loading {
+  width: 100%;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-animation: search_loading 1s infinite linear;
+          animation: search_loading 1s infinite linear; }
+  @-webkit-keyframes search_loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+  @keyframes search_loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
