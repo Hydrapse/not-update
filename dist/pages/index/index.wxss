@@ -1,0 +1,5 @@
+.index {
+  padding-top: 10rpx; }
+.white-index {
+  padding-top: 10rpx;
+  background-color: white; }

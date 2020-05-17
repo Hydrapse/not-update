@@ -1,0 +1,6 @@
+.subtitle {
+  margin: 60rpx 22rpx 40rpx;
+  color: #6a6a77;
+  font-size: 30rpx;
+  font-weight: 600;
+  line-height: 1.5; }

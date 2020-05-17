@@ -1,0 +1,37 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="{{anonymousState__temp2}}" style="{{anonymousState__temp3}}">
+        <block wx:if="{{type === 'border-title'}}">
+            <view class="action border-title justify-between">
+                <view><text class="{{textColorClassName + ' text-bold text-xl'}}">{{title}}</text><text class="{{'' + borderColorClassName}}" style="{{anonymousState__temp}}"></text>
+                </view>
+                <view>
+                    <slot name="right"></slot>
+                </view>
+            </view>
+        </block>
+        <block wx:if="{{type === 'sub-title'}}">
+            <view class="action sub-title justify-between">
+                <view><text class="{{'text-xl text-bold ' + textColorClassName}}">{{title}}</text>
+                    <block>
+                        <block wx:if="{{subTitle}}"><text class="{{'text-' + subTitleColor}}">{{subTitle}}</text>
+                        </block>
+                        <block wx:else><text class="{{'' + borderColorClassName}}"></text>
+                        </block>
+                    </block>
+                </view>
+                <view>
+                    <slot name="right"></slot>
+                </view>
+            </view>
+        </block>
+        <block wx:if="{{type === 'icon'}}">
+            <view class="action justify-between">
+                <view><text class="{{iconClassName + ' ' + iconColorClassName}}"></text><text class="{{'text-xl text-bold ' + textColorClassName}}">{{title}}</text>
+                </view>
+                <view>
+                    <slot name="right"></slot>
+                </view>
+            </view>
+        </block>
+    </view>
+</block>
