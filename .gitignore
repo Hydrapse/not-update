@@ -1,0 +1,23 @@
+.DS_Store
+node_modules/
+__pycache__/
+/db/db_backup/*
+/db/neo4j_backup/*
+/db/redis_backup/*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
