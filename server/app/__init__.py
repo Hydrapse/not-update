@@ -26,10 +26,12 @@ def create_app() -> Flask:
     from app.util.green_print import GreenPrint
     from app.api.v1.oauth import oauth_blueprint
     from app.api.v1.user import user_blueprint
+    from app.api.v1.data import data_blueprint
 
     api_v1 = GreenPrint('api', __name__, url_prefix='/api/v1')
     api_v1.register_blueprint(oauth_blueprint)
     api_v1.register_blueprint(user_blueprint)
+    api_v1.register_blueprint(data_blueprint)
 
     flask_app.register_blueprint(api_v1)
 

@@ -8,3 +8,6 @@ class Config:
     }
 
     JWT_SECRET = "NotU@lsqnb.*&"
+
+    WEATHER_KEY = "S0ve3eBlLV3Wp761K"
+    WEATHER_API = "https://api.seniverse.com/v3/weather/now.json"
