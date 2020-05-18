@@ -8,7 +8,7 @@
                 <input placeholder="{{placeholder}}" confirm-type="search" type="text" bindfocus="onFocus" bindblur="onBlur" focus="{{showSearch}}" adjust-position="{{true}}" auto-focus="{{autoFocus}}" value="{{value}}" catchconfirm="onSearch" bindinput="onInput" data-e-confirm-so="this" data-e-input-so="this" />
                 <block wx:if="{{clear && value}}">
                     <view catchtap="anonymousFunc0">
-                        <cl-icon compid="{{$compid__73}}"></cl-icon>
+                        <cl-icon compid="{{$compid__78}}"></cl-icon>
                     </view>
                 </block>
             </view>
@@ -28,9 +28,9 @@
             <block wx:if="{{showResult}}">
                 <view style="{{anonymousState__temp7}}">
                     <block wx:if="{{result && result.length || showLoading}}">
-                        <cl-card compid="{{$compid__74}}">
+                        <cl-card compid="{{$compid__79}}">
                             <scroll-view scroll-y="{{true}}" style="{{anonymousState__temp8}}" bindscrolltolower="anonymousFunc1" bindscrolltoupper="anonymousFunc2">
-                                <cl-search-result compid="{{$compid__75}}"></cl-search-result>
+                                <cl-search-result compid="{{$compid__80}}"></cl-search-result>
                             </scroll-view>
                         </cl-card>
                     </block>

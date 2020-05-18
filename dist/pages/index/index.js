@@ -50,7 +50,7 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "$compid__44", "current"], _this.config = {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "$compid__50", "current"], _this.config = {
       navigationBarTitleText: ''
     }, _this.customComponents = ["Main", "User", "AtTabBar"], _temp), _possibleConstructorReturn(_this, _ret);
   }
@@ -105,10 +105,10 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__44"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__50"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__44 = _genCompid2[0],
-          $compid__44 = _genCompid2[1];
+          $prevCompid__50 = _genCompid2[0],
+          $compid__50 = _genCompid2[1];
 
       var current = this.__state.current;
 
@@ -123,11 +123,11 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
         "tabList": anonymousState__temp2,
         "onClick": this.handleClick.bind(this),
         "current": current
-      }, $compid__44, $prevCompid__44);
+      }, $compid__50, $prevCompid__50);
       Object.assign(this.__state, {
         anonymousState__temp: anonymousState__temp,
         anonymousState__temp2: anonymousState__temp2,
-        $compid__44: $compid__44
+        $compid__50: $compid__50
       });
       return this.__state;
     }

@@ -56,7 +56,7 @@ var ClCard = (_temp2 = _class = function (_Taro$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClCard.__proto__ || Object.getPrototypeOf(ClCard)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "anonymousState__temp3", "$compid__76", "props", "renderTitle", "children"], _this.customComponents = ["ClText"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClCard.__proto__ || Object.getPrototypeOf(ClCard)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "anonymousState__temp3", "$compid__81", "props", "renderTitle", "children"], _this.customComponents = ["ClText"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(ClCard, [{
@@ -75,10 +75,10 @@ var ClCard = (_temp2 = _class = function (_Taro$Component) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__76"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__81"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__76 = _genCompid2[0],
-          $compid__76 = _genCompid2[1];
+          $prevCompid__81 = _genCompid2[0],
+          $compid__81 = _genCompid2[1];
 
       var props = this.__props;
 
@@ -91,12 +91,12 @@ var ClCard = (_temp2 = _class = function (_Taro$Component) {
       }, colorClassName, {
         cu_card_active: props.active
       }]);
-      props.title && props.title.text && _taroWeapp.propsManager.set(_extends({}, props.title), $compid__76, $prevCompid__76);
+      props.title && props.title.text && _taroWeapp.propsManager.set(_extends({}, props.title), $compid__81, $prevCompid__81);
       Object.assign(this.__state, {
         anonymousState__temp: anonymousState__temp,
         anonymousState__temp2: anonymousState__temp2,
         anonymousState__temp3: anonymousState__temp3,
-        $compid__76: $compid__76,
+        $compid__81: $compid__81,
         props: props
       });
       return this.__state;
