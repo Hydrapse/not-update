@@ -11,3 +11,6 @@ class Config:
 
     WEATHER_KEY = "S0ve3eBlLV3Wp761K"
     WEATHER_API = "https://api.seniverse.com/v3/weather/now.json"
+
+    SMS_ACCESS_KEY_ID = "LTAI4GBqhY4th4bTs1aQ5yXL"
+    SMS_ACCESS_SECRET = "MQP5L6toLfvENY4ridnUd2OtQ38cHd"
