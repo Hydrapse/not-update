@@ -52,7 +52,7 @@ var ClSearchBar = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSearchBar.__proto__ || Object.getPrototypeOf(ClSearchBar)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp3", "anonymousState__temp4", "anonymousState__temp5", "anonymousState__temp6", "anonymousState__temp7", "anonymousState__temp8", "loopArray5", "$compid__73", "$compid__74", "$compid__75", "leftIcons", "shape", "placeholder", "showSearch", "value", "clear", "buttonColorClassName", "textColorClassName", "showResult", "result", "showLoading", "searchType", "bgColor", "rightButtonColor", "rightTextColor", "fix", "className", "style", "autoFocus", "onClear", "onScrollToLower", "onScrollToUpper", "onTouchResult"], _this.customComponents = ["ClIcon", "ClCard", "ClSearchResult"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSearchBar.__proto__ || Object.getPrototypeOf(ClSearchBar)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp3", "anonymousState__temp4", "anonymousState__temp5", "anonymousState__temp6", "anonymousState__temp7", "anonymousState__temp8", "loopArray5", "$compid__78", "$compid__79", "$compid__80", "leftIcons", "shape", "placeholder", "showSearch", "value", "clear", "buttonColorClassName", "textColorClassName", "showResult", "result", "showLoading", "searchType", "bgColor", "rightButtonColor", "rightTextColor", "fix", "className", "style", "autoFocus", "onClear", "onScrollToLower", "onScrollToUpper", "onTouchResult"], _this.customComponents = ["ClIcon", "ClCard", "ClSearchResult"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(ClSearchBar, [{
@@ -113,20 +113,20 @@ var ClSearchBar = (_temp2 = _class = function (_BaseComponent) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__73"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__78"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__73 = _genCompid2[0],
-          $compid__73 = _genCompid2[1];
+          $prevCompid__78 = _genCompid2[0],
+          $compid__78 = _genCompid2[1];
 
-      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__74"),
+      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__79"),
           _genCompid4 = _slicedToArray(_genCompid3, 2),
-          $prevCompid__74 = _genCompid4[0],
-          $compid__74 = _genCompid4[1];
+          $prevCompid__79 = _genCompid4[0],
+          $compid__79 = _genCompid4[1];
 
-      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__75"),
+      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__80"),
           _genCompid6 = _slicedToArray(_genCompid5, 2),
-          $prevCompid__75 = _genCompid6[0],
-          $compid__75 = _genCompid6[1];
+          $prevCompid__80 = _genCompid6[0],
+          $compid__80 = _genCompid6[1];
 
       var _props = this.__props,
           bgColor = _props.bgColor,
@@ -205,16 +205,16 @@ var ClSearchBar = (_temp2 = _class = function (_BaseComponent) {
         "iconName": "close",
         "size": 32,
         "style": anonymousState__temp3
-      }, $compid__73, $prevCompid__73);
+      }, $compid__78, $prevCompid__78);
       showResult && (result && result.length || showLoading) && _taroWeapp.propsManager.set({
         "shadow": false,
         "bgColor": bgColor
-      }, $compid__74, $prevCompid__74);
+      }, $compid__79, $prevCompid__79);
       showResult && (result && result.length || showLoading) && _taroWeapp.propsManager.set({
         "result": result,
         "showLoading": showLoading,
         "onTouchResult": this.anonymousFunc3
-      }, $compid__75, $prevCompid__75);
+      }, $compid__80, $prevCompid__80);
       Object.assign(this.__state, {
         anonymousState__temp3: anonymousState__temp3,
         anonymousState__temp4: anonymousState__temp4,
@@ -223,9 +223,9 @@ var ClSearchBar = (_temp2 = _class = function (_BaseComponent) {
         anonymousState__temp7: anonymousState__temp7,
         anonymousState__temp8: anonymousState__temp8,
         loopArray5: loopArray5,
-        $compid__73: $compid__73,
-        $compid__74: $compid__74,
-        $compid__75: $compid__75,
+        $compid__78: $compid__78,
+        $compid__79: $compid__79,
+        $compid__80: $compid__80,
         leftIcons: leftIcons,
         shape: shape,
         placeholder: placeholder,

@@ -1,5 +1,5 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="user">
-        <cl-title-bar compid="{{$compid__565}}"></cl-title-bar>
+        <cl-title-bar compid="{{$compid__77}}"></cl-title-bar>
     </view>
 </block>

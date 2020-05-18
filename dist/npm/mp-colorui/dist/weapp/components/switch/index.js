@@ -52,7 +52,7 @@ var ClSwitch = (_temp2 = _class = function (_Taro$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSwitch.__proto__ || Object.getPrototypeOf(ClSwitch)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "anonymousState__temp3", "anonymousState__temp4", "anonymousState__temp5", "$compid__83", "checked", "props", "title", "type"], _this.customComponents = ["ClSwitch_h5"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSwitch.__proto__ || Object.getPrototypeOf(ClSwitch)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "anonymousState__temp3", "anonymousState__temp4", "anonymousState__temp5", "$compid__88", "checked", "props", "title", "type"], _this.customComponents = ["ClSwitch_h5"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(ClSwitch, [{
@@ -71,10 +71,10 @@ var ClSwitch = (_temp2 = _class = function (_Taro$Component) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__83"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__88"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__83 = _genCompid2[0],
-          $compid__83 = _genCompid2[1];
+          $prevCompid__88 = _genCompid2[0],
+          $compid__88 = _genCompid2[1];
 
       var props = this.__props;
 
@@ -93,14 +93,14 @@ var ClSwitch = (_temp2 = _class = function (_Taro$Component) {
       var anonymousState__temp3 = (0, _index.classNames)("cu-form-group", props.className);
       var anonymousState__temp4 = (0, _taroWeapp.internal_inline_style)(Object.assign({}, props.style));
       var anonymousState__temp5 = _taroWeapp2.default.getEnv() === _taroWeapp2.default.ENV_TYPE.WEB;
-      anonymousState__temp5 && _taroWeapp.propsManager.set(_extends({}, this.__props), $compid__83, $prevCompid__83);
+      anonymousState__temp5 && _taroWeapp.propsManager.set(_extends({}, this.__props), $compid__88, $prevCompid__88);
       Object.assign(this.__state, {
         anonymousState__temp: anonymousState__temp,
         anonymousState__temp2: anonymousState__temp2,
         anonymousState__temp3: anonymousState__temp3,
         anonymousState__temp4: anonymousState__temp4,
         anonymousState__temp5: anonymousState__temp5,
-        $compid__83: $compid__83,
+        $compid__88: $compid__88,
         checked: checked,
         props: props,
         title: title,

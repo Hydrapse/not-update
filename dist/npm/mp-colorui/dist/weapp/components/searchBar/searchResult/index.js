@@ -52,7 +52,7 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSearchResult.__proto__ || Object.getPrototypeOf(ClSearchResult)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp3", "anonymousState__temp4", "loopArray6", "$compid__80", "$compid__81", "$compid__82", "result", "showLoading"], _this.anonymousFunc0Map = {}, _this.customComponents = ["ClLayout", "ClText", "ClIcon", "ClFlex"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSearchResult.__proto__ || Object.getPrototypeOf(ClSearchResult)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp3", "anonymousState__temp4", "loopArray6", "$compid__85", "$compid__86", "$compid__87", "result", "showLoading"], _this.anonymousFunc0Map = {}, _this.customComponents = ["ClLayout", "ClText", "ClIcon", "ClFlex"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(ClSearchResult, [{
@@ -73,20 +73,20 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__80"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__85"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__80 = _genCompid2[0],
-          $compid__80 = _genCompid2[1];
+          $prevCompid__85 = _genCompid2[0],
+          $compid__85 = _genCompid2[1];
 
-      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__81"),
+      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__86"),
           _genCompid4 = _slicedToArray(_genCompid3, 2),
-          $prevCompid__81 = _genCompid4[0],
-          $compid__81 = _genCompid4[1];
+          $prevCompid__86 = _genCompid4[0],
+          $compid__86 = _genCompid4[1];
 
-      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__82"),
+      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__87"),
           _genCompid6 = _slicedToArray(_genCompid5, 2),
-          $prevCompid__82 = _genCompid6[0],
-          $compid__82 = _genCompid6[1];
+          $prevCompid__87 = _genCompid6[0],
+          $compid__87 = _genCompid6[1];
 
       var props = this.__props;
 
@@ -121,62 +121,62 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
 
         var _genCompid7 = (0, _taroWeapp.genCompid)(__prefix + "izzzzzzzzz" + index, true),
             _genCompid8 = _slicedToArray(_genCompid7, 2),
-            $prevCompid__77 = _genCompid8[0],
-            $compid__77 = _genCompid8[1];
+            $prevCompid__82 = _genCompid8[0],
+            $compid__82 = _genCompid8[1];
 
         _taroWeapp.propsManager.set({
           "padding": "small",
           "paddingDirection": "vertical"
-        }, $compid__77, $prevCompid__77);
+        }, $compid__82, $prevCompid__82);
 
         var _genCompid9 = (0, _taroWeapp.genCompid)(__prefix + "jzzzzzzzzz" + index, true),
             _genCompid10 = _slicedToArray(_genCompid9, 2),
-            $prevCompid__78 = _genCompid10[0],
-            $compid__78 = _genCompid10[1];
+            $prevCompid__83 = _genCompid10[0],
+            $compid__83 = _genCompid10[1];
 
         _taroWeapp.propsManager.set({
           "text": item.$original.title,
           "size": "large"
-        }, $compid__78, $prevCompid__78);
+        }, $compid__83, $prevCompid__83);
 
         var _genCompid11 = (0, _taroWeapp.genCompid)(__prefix + "bazzzzzzzz" + index, true),
             _genCompid12 = _slicedToArray(_genCompid11, 2),
-            $prevCompid__79 = _genCompid12[0],
-            $compid__79 = _genCompid12[1];
+            $prevCompid__84 = _genCompid12[0],
+            $compid__84 = _genCompid12[1];
 
         _taroWeapp.propsManager.set({
           "text": item.$original.desc,
           "size": "xsmall",
           "cut": true
-        }, $compid__79, $prevCompid__79);
+        }, $compid__84, $prevCompid__84);
         return {
           $loopState__temp2: $loopState__temp2,
           _$indexKey: _$indexKey,
-          $compid__77: $compid__77,
-          $compid__78: $compid__78,
-          $compid__79: $compid__79,
+          $compid__82: $compid__82,
+          $compid__83: $compid__83,
+          $compid__84: $compid__84,
           $original: item.$original
         };
       });
       _taroWeapp.propsManager.set({
         "padding": "normal",
         "paddingDirection": "vertical"
-      }, $compid__80, $prevCompid__80);
+      }, $compid__85, $prevCompid__85);
       _taroWeapp.propsManager.set({
         "iconName": "loading2"
-      }, $compid__81, $prevCompid__81);
+      }, $compid__86, $prevCompid__86);
       _taroWeapp.propsManager.set({
         "direction": "column",
         "align": "center",
         "justify": "center"
-      }, $compid__82, $prevCompid__82);
+      }, $compid__87, $prevCompid__87);
       Object.assign(this.__state, {
         anonymousState__temp3: anonymousState__temp3,
         anonymousState__temp4: anonymousState__temp4,
         loopArray6: loopArray6,
-        $compid__80: $compid__80,
-        $compid__81: $compid__81,
-        $compid__82: $compid__82,
+        $compid__85: $compid__85,
+        $compid__86: $compid__86,
+        $compid__87: $compid__87,
         result: result,
         showLoading: showLoading
       });

@@ -50,7 +50,7 @@ var User = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = User.__proto__ || Object.getPrototypeOf(User)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["$compid__565"], _this.config = {}, _this.customComponents = ["ClTitleBar"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = User.__proto__ || Object.getPrototypeOf(User)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["$compid__77"], _this.config = {}, _this.customComponents = ["ClTitleBar"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(User, [{
@@ -94,10 +94,10 @@ var User = (_temp2 = _class = function (_BaseComponent) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__565"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__77"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__565 = _genCompid2[0],
-          $compid__565 = _genCompid2[1];
+          $prevCompid__77 = _genCompid2[0],
+          $compid__77 = _genCompid2[1];
 
       _taroWeapp.propsManager.set({
         "title": "\u6211\u7684\u4FE1\u606F",
@@ -105,9 +105,9 @@ var User = (_temp2 = _class = function (_BaseComponent) {
         "textColor": "grey",
         "borderColor": "light-blue",
         "bgColor": "none"
-      }, $compid__565, $prevCompid__565);
+      }, $compid__77, $prevCompid__77);
       Object.assign(this.__state, {
-        $compid__565: $compid__565
+        $compid__77: $compid__77
       });
       return this.__state;
     }

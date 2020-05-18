@@ -170,36 +170,36 @@ var AtTabBar = (_temp2 = _class = function (_AtComponent) {
 
         var _genCompid = (0, _taroWeapp.genCompid)(__prefix + 'bbzzzzzzzz' + i, true),
             _genCompid2 = _slicedToArray(_genCompid, 2),
-            $prevCompid__85 = _genCompid2[0],
-            $compid__85 = _genCompid2[1];
+            $prevCompid__89 = _genCompid2[0],
+            $compid__89 = _genCompid2[1];
 
         item.$original.iconType && _taroWeapp.propsManager.set({
           "dot": $loopState__temp8,
           "value": item.$original.text,
           "maxValue": $loopState__temp10
-        }, $compid__85, $prevCompid__85);
+        }, $compid__89, $prevCompid__89);
 
         var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + 'bczzzzzzzz' + i, true),
             _genCompid4 = _slicedToArray(_genCompid3, 2),
-            $prevCompid__86 = _genCompid4[0],
-            $compid__86 = _genCompid4[1];
+            $prevCompid__90 = _genCompid4[0],
+            $compid__90 = _genCompid4[1];
 
         item.$original.image && _taroWeapp.propsManager.set({
           "dot": $loopState__temp16,
           "value": item.$original.text,
           "maxValue": $loopState__temp18
-        }, $compid__86, $prevCompid__86);
+        }, $compid__90, $prevCompid__90);
 
         var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + 'bdzzzzzzzz' + i, true),
             _genCompid6 = _slicedToArray(_genCompid5, 2),
-            $prevCompid__87 = _genCompid6[0],
-            $compid__87 = _genCompid6[1];
+            $prevCompid__91 = _genCompid6[0],
+            $compid__91 = _genCompid6[1];
 
         _taroWeapp.propsManager.set({
           "dot": item.$original.iconType || item.$original.image ? false : !!item.$original.dot,
           "value": item.$original.iconType || item.$original.image ? '' : item.$original.text,
           "maxValue": $loopState__temp28
-        }, $compid__87, $prevCompid__87);
+        }, $compid__91, $prevCompid__91);
         return {
           $loopState__temp4: $loopState__temp4,
           $loopState__temp6: $loopState__temp6,
@@ -215,9 +215,9 @@ var AtTabBar = (_temp2 = _class = function (_AtComponent) {
           $loopState__temp26: $loopState__temp26,
           $loopState__temp28: $loopState__temp28,
           $loopState__temp30: $loopState__temp30,
-          $compid__85: $compid__85,
-          $compid__86: $compid__86,
-          $compid__87: $compid__87,
+          $compid__89: $compid__89,
+          $compid__90: $compid__90,
+          $compid__91: $compid__91,
           $original: item.$original
         };
       });

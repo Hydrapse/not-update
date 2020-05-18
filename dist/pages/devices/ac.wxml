@@ -1,9 +1,12 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="devices" style="{{anonymousState__temp}}">
-        <at-nav-bar compid="{{$compid__351}}"></at-nav-bar>
+        <at-nav-bar compid="{{$compid__96}}"></at-nav-bar>
         <at-list>
-            <at-list-item compid="{{$compid__352}}"></at-list-item>
-            <at-list-item compid="{{$compid__353}}"></at-list-item>
+            <at-list-item compid="{{$compid__97}}"></at-list-item>
+            <at-list-item compid="{{$compid__98}}"></at-list-item>
         </at-list>
+        <view style="width:100%;height:500px">
+            <f-2-canvas compid="{{$compid__99}}"></f-2-canvas>
+        </view>
     </view>
 </block>
