@@ -1,6 +1,8 @@
 from flask import g, jsonify, Blueprint, request, current_app
 from app.util.common import trueReturn, falseReturn
 from app.util.auth import verify_jwt
+from aliyunsdkcore.client import AcsClient
+from aliyunsdkcore.request import CommonRequest
 import traceback
 import requests
 
@@ -130,8 +132,6 @@ def get_weathers(location):
     """
     获取天气信息
     """
-    print(current_app.config['WEATHER_API'])
-    print(current_app.config['WEATHER_KEY'])
     result = requests.get(current_app.config['WEATHER_API'], params={
         'key': current_app.config['WEATHER_KEY'],
         'location': location,
@@ -141,6 +141,35 @@ def get_weathers(location):
     print(result.text)
     try:
         return jsonify(trueReturn(result.text))
+    except:
+        traceback.print_exc()
+        return jsonify(falseReturn(None, 'data error'))
+
+
+@data_blueprint.route('/notifications', methods=['POST'])
+def notify():
+    """
+    发送警告信息
+    """
+    client = AcsClient(current_app.config['SMS_ACCESS_KEY_ID'], current_app.config['SMS_ACCESS_SECRET'])
+    request = CommonRequest()
+    request.set_accept_format('json')
+    request.set_domain('dysmsapi.aliyuncs.com')
+    request.set_method('POST')
+    request.set_protocol_type('https')  # https | http
+    request.set_version('2017-05-25')
+    request.set_action_name('SendSms')
+
+    request.add_query_param('RegionId', "cn-hangzhou")
+    request.add_query_param('PhoneNumbers', g.data.get("phone"))
+    request.add_query_param('SignName', "OUOStore")
+    request.add_query_param('TemplateCode', "SMS_187951460")
+    request.add_query_param('TemplateParam', "{\"code\":%d}" % int(g.data.get("code")))
+
+    response = client.do_action_with_exception(request)
+    print(str(response, encoding='utf-8'))
+    try:
+        return jsonify(trueReturn(None))
     except:
         traceback.print_exc()
         return jsonify(falseReturn(None, 'data error'))
