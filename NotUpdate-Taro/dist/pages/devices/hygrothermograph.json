@@ -1,0 +1,1 @@
+{"usingComponents":{"at-nav-bar":"../../npm/taro-ui/dist/weapp/components/nav-bar/index","taro-title":"../../components/tarotitle/index","temperature":"../../components/temperature_chart/index","at-list":"../../npm/taro-ui/dist/weapp/components/list/index","at-list-item":"../../npm/taro-ui/dist/weapp/components/list/item/index"},"navigationBarTitleText":"温湿度计设置"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;;;AAAA;AACA;AACA;AACA;AACA","file":"index.js","sourcesContent":["\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar image_zoom_component_1 = require(\"./image-zoom/image-zoom.component\");\nexports.default = image_zoom_component_1.default;\n//# sourceMappingURL=index.js.map"]}

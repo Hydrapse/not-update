@@ -52,7 +52,7 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSearchResult.__proto__ || Object.getPrototypeOf(ClSearchResult)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp3", "anonymousState__temp4", "loopArray6", "$compid__85", "$compid__86", "$compid__87", "result", "showLoading"], _this.anonymousFunc0Map = {}, _this.customComponents = ["ClLayout", "ClText", "ClIcon", "ClFlex"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSearchResult.__proto__ || Object.getPrototypeOf(ClSearchResult)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp3", "anonymousState__temp4", "loopArray6", "$compid__105", "$compid__106", "$compid__107", "result", "showLoading"], _this.anonymousFunc0Map = {}, _this.customComponents = ["ClLayout", "ClText", "ClIcon", "ClFlex"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(ClSearchResult, [{
@@ -73,20 +73,20 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__85"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__105"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__85 = _genCompid2[0],
-          $compid__85 = _genCompid2[1];
+          $prevCompid__105 = _genCompid2[0],
+          $compid__105 = _genCompid2[1];
 
-      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__86"),
+      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__106"),
           _genCompid4 = _slicedToArray(_genCompid3, 2),
-          $prevCompid__86 = _genCompid4[0],
-          $compid__86 = _genCompid4[1];
+          $prevCompid__106 = _genCompid4[0],
+          $compid__106 = _genCompid4[1];
 
-      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__87"),
+      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__107"),
           _genCompid6 = _slicedToArray(_genCompid5, 2),
-          $prevCompid__87 = _genCompid6[0],
-          $compid__87 = _genCompid6[1];
+          $prevCompid__107 = _genCompid6[0],
+          $compid__107 = _genCompid6[1];
 
       var props = this.__props;
 
@@ -121,62 +121,62 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
 
         var _genCompid7 = (0, _taroWeapp.genCompid)(__prefix + "izzzzzzzzz" + index, true),
             _genCompid8 = _slicedToArray(_genCompid7, 2),
-            $prevCompid__82 = _genCompid8[0],
-            $compid__82 = _genCompid8[1];
+            $prevCompid__102 = _genCompid8[0],
+            $compid__102 = _genCompid8[1];
 
         _taroWeapp.propsManager.set({
           "padding": "small",
           "paddingDirection": "vertical"
-        }, $compid__82, $prevCompid__82);
+        }, $compid__102, $prevCompid__102);
 
         var _genCompid9 = (0, _taroWeapp.genCompid)(__prefix + "jzzzzzzzzz" + index, true),
             _genCompid10 = _slicedToArray(_genCompid9, 2),
-            $prevCompid__83 = _genCompid10[0],
-            $compid__83 = _genCompid10[1];
+            $prevCompid__103 = _genCompid10[0],
+            $compid__103 = _genCompid10[1];
 
         _taroWeapp.propsManager.set({
           "text": item.$original.title,
           "size": "large"
-        }, $compid__83, $prevCompid__83);
+        }, $compid__103, $prevCompid__103);
 
         var _genCompid11 = (0, _taroWeapp.genCompid)(__prefix + "bazzzzzzzz" + index, true),
             _genCompid12 = _slicedToArray(_genCompid11, 2),
-            $prevCompid__84 = _genCompid12[0],
-            $compid__84 = _genCompid12[1];
+            $prevCompid__104 = _genCompid12[0],
+            $compid__104 = _genCompid12[1];
 
         _taroWeapp.propsManager.set({
           "text": item.$original.desc,
           "size": "xsmall",
           "cut": true
-        }, $compid__84, $prevCompid__84);
+        }, $compid__104, $prevCompid__104);
         return {
           $loopState__temp2: $loopState__temp2,
           _$indexKey: _$indexKey,
-          $compid__82: $compid__82,
-          $compid__83: $compid__83,
-          $compid__84: $compid__84,
+          $compid__102: $compid__102,
+          $compid__103: $compid__103,
+          $compid__104: $compid__104,
           $original: item.$original
         };
       });
       _taroWeapp.propsManager.set({
         "padding": "normal",
         "paddingDirection": "vertical"
-      }, $compid__85, $prevCompid__85);
+      }, $compid__105, $prevCompid__105);
       _taroWeapp.propsManager.set({
         "iconName": "loading2"
-      }, $compid__86, $prevCompid__86);
+      }, $compid__106, $prevCompid__106);
       _taroWeapp.propsManager.set({
         "direction": "column",
         "align": "center",
         "justify": "center"
-      }, $compid__87, $prevCompid__87);
+      }, $compid__107, $prevCompid__107);
       Object.assign(this.__state, {
         anonymousState__temp3: anonymousState__temp3,
         anonymousState__temp4: anonymousState__temp4,
         loopArray6: loopArray6,
-        $compid__85: $compid__85,
-        $compid__86: $compid__86,
-        $compid__87: $compid__87,
+        $compid__105: $compid__105,
+        $compid__106: $compid__106,
+        $compid__107: $compid__107,
         result: result,
         showLoading: showLoading
       });
@@ -210,10 +210,10 @@ Component(__webpack_require__(/*! @tarojs/taro-weapp */ "./node_modules/@tarojs/
 
 /***/ }),
 
-/***/ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/node_modules&outputPath=npm!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./node_modules/mp-colorui/dist/weapp/components/searchBar/searchResult/index.tsx?taro&type=template&parse=COMPONENT&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/node_modules&outputPath=npm!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./node_modules/mp-colorui/dist/weapp/components/searchBar/searchResult/index.tsx?taro&type=template&parse=COMPONENT& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/NotUpdate-Taro/node_modules&outputPath=npm!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./node_modules/mp-colorui/dist/weapp/components/searchBar/searchResult/index.tsx?taro&type=template&parse=COMPONENT&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/NotUpdate-Taro/node_modules&outputPath=npm!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./node_modules/mp-colorui/dist/weapp/components/searchBar/searchResult/index.tsx?taro&type=template&parse=COMPONENT& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -275,9 +275,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!file-loader?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/node_modules&outputPath=npm!../../../../../../@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!../../../../../../@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./index.tsx?taro&type=template&parse=COMPONENT& */ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/node_modules&outputPath=npm!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./node_modules/mp-colorui/dist/weapp/components/searchBar/searchResult/index.tsx?taro&type=template&parse=COMPONENT&");
-/* harmony import */ var _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!file-loader?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/NotUpdate-Taro/node_modules&outputPath=npm!../../../../../../@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!../../../../../../@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./index.tsx?taro&type=template&parse=COMPONENT& */ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/NotUpdate-Taro/node_modules&outputPath=npm!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./node_modules/mp-colorui/dist/weapp/components/searchBar/searchResult/index.tsx?taro&type=template&parse=COMPONENT&");
+/* harmony import */ var _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_node_modules_outputPath_npm_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_index_tsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ })

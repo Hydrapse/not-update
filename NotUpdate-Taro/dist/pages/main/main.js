@@ -51,7 +51,7 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Main.__proto__ || Object.getPrototypeOf(Main)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "anonymousState__temp3", "$compid__51", "$compid__52", "$compid__53", "$compid__54", "$compid__55", "$compid__56", "$compid__57", "$compid__58", "$compid__59", "$compid__60", "$compid__61", "$compid__62", "$compid__63", "$compid__64", "$compid__65", "$compid__66", "$compid__67", "$compid__68", "$compid__69", "$compid__70", "$compid__71", "$compid__72", "$compid__73", "$compid__74", "$compid__75", "$compid__76", "pannelCurrent", "showSearchResult", "monitorSwitch", "logSwitch", "deviceSwitch", "messageSwitch"], _this.config = {}, _this.customComponents = ["ClTitleBar", "ClSearchBar", "AtTabs", "AtTabsPane", "AtGrid", "SubTitle", "ClIcon", "ClSwitch", "AtProgress"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Main.__proto__ || Object.getPrototypeOf(Main)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "anonymousState__temp3", "$compid__60", "$compid__61", "$compid__62", "$compid__63", "$compid__64", "$compid__65", "$compid__66", "$compid__67", "$compid__68", "$compid__69", "$compid__70", "$compid__71", "$compid__72", "$compid__73", "$compid__74", "$compid__75", "$compid__76", "$compid__77", "$compid__78", "$compid__79", "$compid__80", "$compid__81", "$compid__82", "$compid__83", "$compid__84", "$compid__85", "$compid__86", "pannelCurrent", "showSearchResult", "monitorSwitch", "logSwitch", "deviceSwitch", "messageSwitch"], _this.config = {}, _this.customComponents = ["ClTitleBar", "ClSearchBar", "AtTabs", "AtTabsPane", "ElectricFee", "AtGrid", "SubTitle", "ClIcon", "ClSwitch", "AtProgress"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Main, [{
@@ -95,6 +95,9 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
     value: function componentDidHide() {}
   }, {
     key: "handleInput",
+
+
+    //搜索栏输入处理
     value: function handleInput(value) {
       console.log('搜索栏正在输入' + value);
       if (value == '') {
@@ -107,6 +110,9 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
         });
       }
     }
+
+    //面板切换
+
   }, {
     key: "handleClick",
     value: function handleClick(value) {
@@ -114,6 +120,9 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
         pannelCurrent: value
       });
     }
+
+    //对应功能卡片点击
+
   }, {
     key: "FuncCardClick",
     value: function FuncCardClick(index) {
@@ -125,10 +134,21 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
           console.log('调整空调');
           break;
         case 2:
+          _taroWeapp2.default.navigateTo({
+            url: '/pages/devices/hygrothermograph'
+          });
           console.log('查看温度');
           break;
+        case 3:
+          _taroWeapp2.default.navigateTo({
+            url: '/pages/devices/hygrothermograph'
+          });
+          console.log('查看湿度');
       }
     }
+
+    //关于功能区域的switch组件选择 
+
   }, {
     key: "handleChange",
     value: function handleChange(index, e) {
@@ -159,142 +179,146 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__51"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__60"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__51 = _genCompid2[0],
-          $compid__51 = _genCompid2[1];
+          $prevCompid__60 = _genCompid2[0],
+          $compid__60 = _genCompid2[1];
 
-      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__52"),
+      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__61"),
           _genCompid4 = _slicedToArray(_genCompid3, 2),
-          $prevCompid__52 = _genCompid4[0],
-          $compid__52 = _genCompid4[1];
+          $prevCompid__61 = _genCompid4[0],
+          $compid__61 = _genCompid4[1];
 
-      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__53"),
+      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__62"),
           _genCompid6 = _slicedToArray(_genCompid5, 2),
-          $prevCompid__53 = _genCompid6[0],
-          $compid__53 = _genCompid6[1];
+          $prevCompid__62 = _genCompid6[0],
+          $compid__62 = _genCompid6[1];
 
-      var _genCompid7 = (0, _taroWeapp.genCompid)(__prefix + "$compid__54"),
+      var _genCompid7 = (0, _taroWeapp.genCompid)(__prefix + "$compid__63"),
           _genCompid8 = _slicedToArray(_genCompid7, 2),
-          $prevCompid__54 = _genCompid8[0],
-          $compid__54 = _genCompid8[1];
+          $prevCompid__63 = _genCompid8[0],
+          $compid__63 = _genCompid8[1];
 
-      var _genCompid9 = (0, _taroWeapp.genCompid)(__prefix + "$compid__55"),
+      var _genCompid9 = (0, _taroWeapp.genCompid)(__prefix + "$compid__64"),
           _genCompid10 = _slicedToArray(_genCompid9, 2),
-          $prevCompid__55 = _genCompid10[0],
-          $compid__55 = _genCompid10[1];
+          $prevCompid__64 = _genCompid10[0],
+          $compid__64 = _genCompid10[1];
 
-      var _genCompid11 = (0, _taroWeapp.genCompid)(__prefix + "$compid__56"),
+      var _genCompid11 = (0, _taroWeapp.genCompid)(__prefix + "$compid__65"),
           _genCompid12 = _slicedToArray(_genCompid11, 2),
-          $prevCompid__56 = _genCompid12[0],
-          $compid__56 = _genCompid12[1];
+          $prevCompid__65 = _genCompid12[0],
+          $compid__65 = _genCompid12[1];
 
-      var _genCompid13 = (0, _taroWeapp.genCompid)(__prefix + "$compid__57"),
+      var _genCompid13 = (0, _taroWeapp.genCompid)(__prefix + "$compid__66"),
           _genCompid14 = _slicedToArray(_genCompid13, 2),
-          $prevCompid__57 = _genCompid14[0],
-          $compid__57 = _genCompid14[1];
+          $prevCompid__66 = _genCompid14[0],
+          $compid__66 = _genCompid14[1];
 
-      var _genCompid15 = (0, _taroWeapp.genCompid)(__prefix + "$compid__58"),
+      var _genCompid15 = (0, _taroWeapp.genCompid)(__prefix + "$compid__67"),
           _genCompid16 = _slicedToArray(_genCompid15, 2),
-          $prevCompid__58 = _genCompid16[0],
-          $compid__58 = _genCompid16[1];
+          $prevCompid__67 = _genCompid16[0],
+          $compid__67 = _genCompid16[1];
 
-      var _genCompid17 = (0, _taroWeapp.genCompid)(__prefix + "$compid__59"),
+      var _genCompid17 = (0, _taroWeapp.genCompid)(__prefix + "$compid__68"),
           _genCompid18 = _slicedToArray(_genCompid17, 2),
-          $prevCompid__59 = _genCompid18[0],
-          $compid__59 = _genCompid18[1];
+          $prevCompid__68 = _genCompid18[0],
+          $compid__68 = _genCompid18[1];
 
-      var _genCompid19 = (0, _taroWeapp.genCompid)(__prefix + "$compid__60"),
+      var _genCompid19 = (0, _taroWeapp.genCompid)(__prefix + "$compid__69"),
           _genCompid20 = _slicedToArray(_genCompid19, 2),
-          $prevCompid__60 = _genCompid20[0],
-          $compid__60 = _genCompid20[1];
+          $prevCompid__69 = _genCompid20[0],
+          $compid__69 = _genCompid20[1];
 
-      var _genCompid21 = (0, _taroWeapp.genCompid)(__prefix + "$compid__61"),
+      var _genCompid21 = (0, _taroWeapp.genCompid)(__prefix + "$compid__70"),
           _genCompid22 = _slicedToArray(_genCompid21, 2),
-          $prevCompid__61 = _genCompid22[0],
-          $compid__61 = _genCompid22[1];
+          $prevCompid__70 = _genCompid22[0],
+          $compid__70 = _genCompid22[1];
 
-      var _genCompid23 = (0, _taroWeapp.genCompid)(__prefix + "$compid__62"),
+      var _genCompid23 = (0, _taroWeapp.genCompid)(__prefix + "$compid__71"),
           _genCompid24 = _slicedToArray(_genCompid23, 2),
-          $prevCompid__62 = _genCompid24[0],
-          $compid__62 = _genCompid24[1];
+          $prevCompid__71 = _genCompid24[0],
+          $compid__71 = _genCompid24[1];
 
-      var _genCompid25 = (0, _taroWeapp.genCompid)(__prefix + "$compid__63"),
+      var _genCompid25 = (0, _taroWeapp.genCompid)(__prefix + "$compid__72"),
           _genCompid26 = _slicedToArray(_genCompid25, 2),
-          $prevCompid__63 = _genCompid26[0],
-          $compid__63 = _genCompid26[1];
+          $prevCompid__72 = _genCompid26[0],
+          $compid__72 = _genCompid26[1];
 
-      var _genCompid27 = (0, _taroWeapp.genCompid)(__prefix + "$compid__64"),
+      var _genCompid27 = (0, _taroWeapp.genCompid)(__prefix + "$compid__73"),
           _genCompid28 = _slicedToArray(_genCompid27, 2),
-          $prevCompid__64 = _genCompid28[0],
-          $compid__64 = _genCompid28[1];
+          $prevCompid__73 = _genCompid28[0],
+          $compid__73 = _genCompid28[1];
 
-      var _genCompid29 = (0, _taroWeapp.genCompid)(__prefix + "$compid__65"),
+      var _genCompid29 = (0, _taroWeapp.genCompid)(__prefix + "$compid__74"),
           _genCompid30 = _slicedToArray(_genCompid29, 2),
-          $prevCompid__65 = _genCompid30[0],
-          $compid__65 = _genCompid30[1];
+          $prevCompid__74 = _genCompid30[0],
+          $compid__74 = _genCompid30[1];
 
-      var _genCompid31 = (0, _taroWeapp.genCompid)(__prefix + "$compid__66"),
+      var _genCompid31 = (0, _taroWeapp.genCompid)(__prefix + "$compid__75"),
           _genCompid32 = _slicedToArray(_genCompid31, 2),
-          $prevCompid__66 = _genCompid32[0],
-          $compid__66 = _genCompid32[1];
+          $prevCompid__75 = _genCompid32[0],
+          $compid__75 = _genCompid32[1];
 
-      var _genCompid33 = (0, _taroWeapp.genCompid)(__prefix + "$compid__67"),
+      var _genCompid33 = (0, _taroWeapp.genCompid)(__prefix + "$compid__76"),
           _genCompid34 = _slicedToArray(_genCompid33, 2),
-          $prevCompid__67 = _genCompid34[0],
-          $compid__67 = _genCompid34[1];
+          $prevCompid__76 = _genCompid34[0],
+          $compid__76 = _genCompid34[1];
 
-      var _genCompid35 = (0, _taroWeapp.genCompid)(__prefix + "$compid__68"),
+      var _genCompid35 = (0, _taroWeapp.genCompid)(__prefix + "$compid__77"),
           _genCompid36 = _slicedToArray(_genCompid35, 2),
-          $prevCompid__68 = _genCompid36[0],
-          $compid__68 = _genCompid36[1];
+          $prevCompid__77 = _genCompid36[0],
+          $compid__77 = _genCompid36[1];
 
-      var _genCompid37 = (0, _taroWeapp.genCompid)(__prefix + "$compid__69"),
+      var _genCompid37 = (0, _taroWeapp.genCompid)(__prefix + "$compid__78"),
           _genCompid38 = _slicedToArray(_genCompid37, 2),
-          $prevCompid__69 = _genCompid38[0],
-          $compid__69 = _genCompid38[1];
+          $prevCompid__78 = _genCompid38[0],
+          $compid__78 = _genCompid38[1];
 
-      var _genCompid39 = (0, _taroWeapp.genCompid)(__prefix + "$compid__70"),
+      var _genCompid39 = (0, _taroWeapp.genCompid)(__prefix + "$compid__79"),
           _genCompid40 = _slicedToArray(_genCompid39, 2),
-          $prevCompid__70 = _genCompid40[0],
-          $compid__70 = _genCompid40[1];
+          $prevCompid__79 = _genCompid40[0],
+          $compid__79 = _genCompid40[1];
 
-      var _genCompid41 = (0, _taroWeapp.genCompid)(__prefix + "$compid__71"),
+      var _genCompid41 = (0, _taroWeapp.genCompid)(__prefix + "$compid__80"),
           _genCompid42 = _slicedToArray(_genCompid41, 2),
-          $prevCompid__71 = _genCompid42[0],
-          $compid__71 = _genCompid42[1];
+          $prevCompid__80 = _genCompid42[0],
+          $compid__80 = _genCompid42[1];
 
-      var _genCompid43 = (0, _taroWeapp.genCompid)(__prefix + "$compid__72"),
+      var _genCompid43 = (0, _taroWeapp.genCompid)(__prefix + "$compid__81"),
           _genCompid44 = _slicedToArray(_genCompid43, 2),
-          $prevCompid__72 = _genCompid44[0],
-          $compid__72 = _genCompid44[1];
+          $prevCompid__81 = _genCompid44[0],
+          $compid__81 = _genCompid44[1];
 
-      var _genCompid45 = (0, _taroWeapp.genCompid)(__prefix + "$compid__73"),
+      var _genCompid45 = (0, _taroWeapp.genCompid)(__prefix + "$compid__82"),
           _genCompid46 = _slicedToArray(_genCompid45, 2),
-          $prevCompid__73 = _genCompid46[0],
-          $compid__73 = _genCompid46[1];
+          $prevCompid__82 = _genCompid46[0],
+          $compid__82 = _genCompid46[1];
 
-      var _genCompid47 = (0, _taroWeapp.genCompid)(__prefix + "$compid__74"),
+      var _genCompid47 = (0, _taroWeapp.genCompid)(__prefix + "$compid__83"),
           _genCompid48 = _slicedToArray(_genCompid47, 2),
-          $prevCompid__74 = _genCompid48[0],
-          $compid__74 = _genCompid48[1];
+          $prevCompid__83 = _genCompid48[0],
+          $compid__83 = _genCompid48[1];
 
-      var _genCompid49 = (0, _taroWeapp.genCompid)(__prefix + "$compid__75"),
+      var _genCompid49 = (0, _taroWeapp.genCompid)(__prefix + "$compid__84"),
           _genCompid50 = _slicedToArray(_genCompid49, 2),
-          $prevCompid__75 = _genCompid50[0],
-          $compid__75 = _genCompid50[1];
+          $prevCompid__84 = _genCompid50[0],
+          $compid__84 = _genCompid50[1];
 
-      var _genCompid51 = (0, _taroWeapp.genCompid)(__prefix + "$compid__76"),
+      var _genCompid51 = (0, _taroWeapp.genCompid)(__prefix + "$compid__85"),
           _genCompid52 = _slicedToArray(_genCompid51, 2),
-          $prevCompid__76 = _genCompid52[0],
-          $compid__76 = _genCompid52[1];
+          $prevCompid__85 = _genCompid52[0],
+          $compid__85 = _genCompid52[1];
+
+      var _genCompid53 = (0, _taroWeapp.genCompid)(__prefix + "$compid__86"),
+          _genCompid54 = _slicedToArray(_genCompid53, 2),
+          $prevCompid__86 = _genCompid54[0],
+          $compid__86 = _genCompid54[1];
 
       var _state = this.__state,
           monitorSwitch = _state.monitorSwitch,
           logSwitch = _state.logSwitch,
           deviceSwitch = _state.deviceSwitch,
           messageSwitch = _state.messageSwitch;
-
 
       var anonymousState__temp = [{ title: '监控查询', desc: '近期记录' }, { title: '门窗状态', desc: '是否长时间未关闭' }];
 
@@ -341,7 +365,7 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
         "textColor": "grey",
         "borderColor": "light-blue",
         "bgColor": "none"
-      }, $compid__51, $prevCompid__51);
+      }, $compid__60, $prevCompid__60);
       _taroWeapp.propsManager.set({
         "shape": "round",
         "placeholder": "\u5FEB\u6377\u68C0\u7D22",
@@ -351,126 +375,121 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
         "showResult": this.__state.showSearchResult,
         "result": anonymousState__temp,
         "onBlur": this.anonymousFunc0
-      }, $compid__52, $prevCompid__52);
+      }, $compid__61, $prevCompid__61);
       _taroWeapp.propsManager.set({
         "animated": false,
         "current": this.__state.pannelCurrent,
         "tabList": anonymousState__temp2,
         "onClick": this.handleClick.bind(this)
-      }, $compid__53, $prevCompid__53);
+      }, $compid__62, $prevCompid__62);
       _taroWeapp.propsManager.set({
         "current": this.__state.pannelCurrent,
         "index": 0
-      }, $compid__54, $prevCompid__54);
+      }, $compid__63, $prevCompid__63);
       _taroWeapp.propsManager.set({
         "current": this.__state.pannelCurrent,
         "index": 1
-      }, $compid__55, $prevCompid__55);
+      }, $compid__64, $prevCompid__64);
+      _taroWeapp.propsManager.set({
+        "percent": 75,
+        "money": "80.00"
+      }, $compid__65, $prevCompid__65);
       _taroWeapp.propsManager.set({
         "current": this.__state.pannelCurrent,
         "index": 2
-      }, $compid__56, $prevCompid__56);
+      }, $compid__66, $prevCompid__66);
       _taroWeapp.propsManager.set({
         "columnNum": 2,
         "data": anonymousState__temp3
-      }, $compid__57, $prevCompid__57);
+      }, $compid__67, $prevCompid__67);
       _taroWeapp.propsManager.set({
         "name": "\u529F\u80FD\u5165\u53E3"
-      }, $compid__58, $prevCompid__58);
+      }, $compid__68, $prevCompid__68);
       _taroWeapp.propsManager.set({
         "iconName": "recordfill",
         "size": "xsmall"
-      }, $compid__59, $prevCompid__59);
+      }, $compid__69, $prevCompid__69);
       _taroWeapp.propsManager.set({
         "iconName": "moreandroid",
         "size": "xsmall"
-      }, $compid__60, $prevCompid__60);
+      }, $compid__70, $prevCompid__70);
       _taroWeapp.propsManager.set({
         "type": "normal",
         "color": "olive",
         "checked": monitorSwitch,
         "onChange": this.handleChange.bind(this, 1)
-      }, $compid__61, $prevCompid__61);
+      }, $compid__71, $prevCompid__71);
       _taroWeapp.propsManager.set({
         "iconName": "rankfill",
         "size": "xsmall"
-      }, $compid__62, $prevCompid__62);
+      }, $compid__72, $prevCompid__72);
       _taroWeapp.propsManager.set({
         "iconName": "moreandroid",
         "size": "xsmall"
-      }, $compid__63, $prevCompid__63);
+      }, $compid__73, $prevCompid__73);
       _taroWeapp.propsManager.set({
         "type": "normal",
         "checked": logSwitch,
         "color": "olive",
         "onChange": this.anonymousFunc1
-      }, $compid__64, $prevCompid__64);
+      }, $compid__74, $prevCompid__74);
       _taroWeapp.propsManager.set({
         "iconName": "settingsfill",
         "size": "xsmall"
-      }, $compid__65, $prevCompid__65);
+      }, $compid__75, $prevCompid__75);
       _taroWeapp.propsManager.set({
         "iconName": "moreandroid",
         "size": "xsmall"
-      }, $compid__66, $prevCompid__66);
+      }, $compid__76, $prevCompid__76);
       _taroWeapp.propsManager.set({
         "disabled": true,
         "type": "normal",
         "checked": deviceSwitch,
         "color": "olive",
         "onChange": this.anonymousFunc2
-      }, $compid__67, $prevCompid__67);
+      }, $compid__77, $prevCompid__77);
       _taroWeapp.propsManager.set({
         "iconName": "newsfill",
         "size": "xsmall"
-      }, $compid__68, $prevCompid__68);
+      }, $compid__78, $prevCompid__78);
       _taroWeapp.propsManager.set({
         "iconName": "moreandroid",
         "size": "xsmall"
-      }, $compid__69, $prevCompid__69);
+      }, $compid__79, $prevCompid__79);
       _taroWeapp.propsManager.set({
         "type": "normal",
         "checked": messageSwitch,
         "color": "olive",
         "onChange": this.anonymousFunc3
-      }, $compid__70, $prevCompid__70);
+      }, $compid__80, $prevCompid__80);
       _taroWeapp.propsManager.set({
-        "name": "\u6210\u5458\u6570\u636E"
-      }, $compid__71, $prevCompid__71);
+        "name": "\u6BCF\u65E5\u6B65\u6570"
+      }, $compid__81, $prevCompid__81);
       _taroWeapp.propsManager.set({
         "percent": 50,
         "isHidePercent": true
-      }, $compid__72, $prevCompid__72);
+      }, $compid__82, $prevCompid__82);
       _taroWeapp.propsManager.set({
         "color": "hsl(43, 100%, 66%)",
         "percent": 80,
         "isHidePercent": true
-      }, $compid__73, $prevCompid__73);
+      }, $compid__83, $prevCompid__83);
       _taroWeapp.propsManager.set({
         "percent": 50,
         "isHidePercent": true
-      }, $compid__74, $prevCompid__74);
+      }, $compid__84, $prevCompid__84);
       _taroWeapp.propsManager.set({
         "percent": 70,
         "isHidePercent": true
-      }, $compid__75, $prevCompid__75);
+      }, $compid__85, $prevCompid__85);
       _taroWeapp.propsManager.set({
         "percent": 30,
         "isHidePercent": true
-      }, $compid__76, $prevCompid__76);
+      }, $compid__86, $prevCompid__86);
       Object.assign(this.__state, {
         anonymousState__temp: anonymousState__temp,
         anonymousState__temp2: anonymousState__temp2,
         anonymousState__temp3: anonymousState__temp3,
-        $compid__51: $compid__51,
-        $compid__52: $compid__52,
-        $compid__53: $compid__53,
-        $compid__54: $compid__54,
-        $compid__55: $compid__55,
-        $compid__56: $compid__56,
-        $compid__57: $compid__57,
-        $compid__58: $compid__58,
-        $compid__59: $compid__59,
         $compid__60: $compid__60,
         $compid__61: $compid__61,
         $compid__62: $compid__62,
@@ -487,7 +506,17 @@ var Main = (_temp2 = _class = function (_BaseComponent) {
         $compid__73: $compid__73,
         $compid__74: $compid__74,
         $compid__75: $compid__75,
-        $compid__76: $compid__76
+        $compid__76: $compid__76,
+        $compid__77: $compid__77,
+        $compid__78: $compid__78,
+        $compid__79: $compid__79,
+        $compid__80: $compid__80,
+        $compid__81: $compid__81,
+        $compid__82: $compid__82,
+        $compid__83: $compid__83,
+        $compid__84: $compid__84,
+        $compid__85: $compid__85,
+        $compid__86: $compid__86
       });
       return this.__state;
     }
@@ -521,10 +550,10 @@ Component(__webpack_require__(/*! @tarojs/taro-weapp */ "./node_modules/@tarojs/
 
 /***/ }),
 
-/***/ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./src/pages/main/main.jsx?taro&type=template&parse=COMPONENT&":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./src/pages/main/main.jsx?taro&type=template&parse=COMPONENT& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/NotUpdate-Taro/src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./src/pages/main/main.jsx?taro&type=template&parse=COMPONENT&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/NotUpdate-Taro/src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./src/pages/main/main.jsx?taro&type=template&parse=COMPONENT& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -575,9 +604,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!file-loader?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/src!../../../node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!../../../node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./main.jsx?taro&type=template&parse=COMPONENT& */ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./src/pages/main/main.jsx?taro&type=template&parse=COMPONENT&");
-/* harmony import */ var _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!file-loader?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/NotUpdate-Taro/src!../../../node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!../../../node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js??ref--6-0!./main.jsx?taro&type=template&parse=COMPONENT& */ "./node_modules/file-loader/dist/cjs.js?name=[path][name].wxml&context=/Users/synapse/vscode_workspace/NodeJS_project/NotUpdate/NotUpdate-Taro/src!./node_modules/@tarojs/mini-runner/dist/loaders/miniTemplateLoader.js!./node_modules/@tarojs/mini-runner/dist/loaders/wxTransformerLoader.js?!./src/pages/main/main.jsx?taro&type=template&parse=COMPONENT&");
+/* harmony import */ var _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _file_loader_name_path_name_wxml_context_Users_synapse_vscode_workspace_NodeJS_project_NotUpdate_NotUpdate_Taro_src_node_modules_tarojs_mini_runner_dist_loaders_miniTemplateLoader_js_node_modules_tarojs_mini_runner_dist_loaders_wxTransformerLoader_js_ref_6_0_main_jsx_taro_type_template_parse_COMPONENT___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),

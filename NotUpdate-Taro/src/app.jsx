@@ -22,7 +22,8 @@ class App extends Component {
   config = {
     pages: [
       'pages/index/index',
-      'pages/devices/ac'
+      'pages/devices/ac',
+      'pages/devices/hygrothermograph'
       // 'pages/demo/demo', //每次添加页面都需要在这里配置
     ],
     window: {

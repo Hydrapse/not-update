@@ -1,0 +1,19 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="devices" style="{{anonymousState__temp}}">
+        <at-nav-bar compid="{{$compid__87}}"></at-nav-bar>
+        <taro-title compid="{{$compid__88}}"></taro-title>
+        <temperature></temperature>
+        <view style="margin-top=20px">
+            <taro-title compid="{{$compid__89}}"></taro-title>
+            <view class="th-calc-setup">
+                <at-list>
+                    <at-list-item compid="{{$compid__90}}"></at-list-item>
+                    <at-list-item compid="{{$compid__91}}"></at-list-item>
+                    <at-list-item compid="{{$compid__92}}"></at-list-item>
+                    <at-list-item compid="{{$compid__93}}"></at-list-item>
+                    <at-list-item compid="{{$compid__94}}"></at-list-item>
+                </at-list>
+            </view>
+        </view>
+    </view>
+</block>

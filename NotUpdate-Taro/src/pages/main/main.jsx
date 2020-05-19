@@ -3,7 +3,8 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { AtProgress, AtTabs, AtTabsPane, AtGrid, AtInputNumber, AtForm, AtSwitch, AtList, AtListItem } from 'taro-ui'
 import { ClSearchBar, ClTitleBar, ClGrid, ClIcon, ClSwitch, ClCard, ClText } from "mp-colorui";
-import {SubTitle} from "../../components"
+
+import {SubTitle, ElectricFee} from "../../components"
 import "./main.scss"
 
 export default class Main extends Component {
@@ -37,6 +38,7 @@ export default class Main extends Component {
   config = {
   }
 
+  //搜索栏输入处理
   handleInput (value){
     console.log('搜索栏正在输入' + value);
     if(value == ''){
@@ -51,12 +53,14 @@ export default class Main extends Component {
     
   }
 
+  //面板切换
   handleClick (value) {
     this.setState({
       pannelCurrent: value
     })
   }
 
+  //对应功能卡片点击
   FuncCardClick (index) {
     switch(index){
       case 1:
@@ -66,11 +70,20 @@ export default class Main extends Component {
         console.log('调整空调')
         break;
       case 2:
+        Taro.navigateTo({
+          url: '/pages/devices/hygrothermograph'
+        })
         console.log('查看温度')
         break;
+      case 3:
+        Taro.navigateTo({
+          url: '/pages/devices/hygrothermograph'
+        })
+        console.log('查看湿度')
     }
   }
 
+  //关于功能区域的switch组件选择 
   handleChange(index, e){
     switch(index){
       case 1:
@@ -92,7 +105,6 @@ export default class Main extends Component {
 
   render () {
     let{ monitorSwitch, logSwitch, deviceSwitch, messageSwitch } = this.state
-
     return (
       <View className='main'>
         <ClTitleBar title='NotU 宿舍管理系统' type='border-title' textColor='grey' borderColor='light-blue' bgColor='none' />
@@ -153,11 +165,13 @@ export default class Main extends Component {
               </View>
             </View>
           </AtTabsPane>
+
           <AtTabsPane current={this.state.pannelCurrent} index={1}>
-            <View className='tabPanel'>
-              这里是数据展示
+            <View className='tabPanel' style='background-color:rgb(241,241,241);'>
+              <ElectricFee percent={75} money='80.00'></ElectricFee>
             </View>
           </AtTabsPane>
+
           <AtTabsPane current={this.state.pannelCurrent} index={2}>
             <View className='tabPanel'>
               <AtGrid columnNum={2} data={[
@@ -256,7 +270,7 @@ export default class Main extends Component {
         </View>
         
         
-        <SubTitle name='成员数据' />
+        <SubTitle name='每日步数' />
         <View className='statistics'>
           <View className='progressData'>
             <View className='progress-text'>
@@ -270,35 +284,35 @@ export default class Main extends Component {
               <View className='progress-bar'>
                 <AtProgress percent={50} isHidePercent></AtProgress>
               </View>
-              <View className='progress-percent'>50</View>
+              <View className='progress-percent'>500</View>
             </View>
             <View className='progress-list__item'>
               <View className='member-name active'>CGY</View>
               <View className='progress-bar'>
                 <AtProgress color='hsl(43, 100%, 66%)' percent={80} isHidePercent></AtProgress>
               </View>
-              <View className='progress-percent'>80</View>
+              <View className='progress-percent'>800</View>
             </View>
             <View className='progress-list__item'>
               <View className='member-name'>WJL</View>
               <View className='progress-bar'>
                 <AtProgress percent={50} isHidePercent></AtProgress>
               </View>
-              <View className='progress-percent'>50</View>
+              <View className='progress-percent'>500</View>
             </View>
             <View className='progress-list__item'>
               <View className='member-name'>ZXY</View>
               <View className='progress-bar'>
                 <AtProgress percent={70} isHidePercent></AtProgress>
               </View>
-              <View className='progress-percent'>70</View>
+              <View className='progress-percent'>700</View>
             </View>
             <View className='progress-list__item'>
               <View className='member-name'>DGD</View>
               <View className='progress-bar'>
                 <AtProgress percent={30} isHidePercent></AtProgress>
               </View>
-              <View className='progress-percent'>30</View>
+              <View className='progress-percent'>300</View>
             </View>
           </View>
         </View>

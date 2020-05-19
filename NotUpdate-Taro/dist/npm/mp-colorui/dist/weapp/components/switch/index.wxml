@@ -1,7 +1,7 @@
 <block wx:if="{{$taroCompReady}}">
     <block>
         <block wx:if="{{anonymousState__temp5}}">
-            <cl-switch-h-5 compid="{{$compid__88}}"></cl-switch-h-5>
+            <cl-switch-h-5 compid="{{$compid__108}}"></cl-switch-h-5>
         </block>
         <block wx:else>
             <block>

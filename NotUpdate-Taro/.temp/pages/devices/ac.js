@@ -1,8 +1,9 @@
 import Nerv from "nervjs";
 import Taro, { getMenuButtonBoundingClientRect as _getMenuButtonBoundingClientRect } from "@tarojs/taro-h5";
 import { View } from '@tarojs/components';
+import { AtNavBar, AtList, AtListItem } from "taro-ui";
 
-import { AtNavBar } from "taro-ui";
+import "./devices.scss";
 
 export default class Ac extends Taro.Component {
   constructor(props) {
@@ -29,18 +30,26 @@ export default class Ac extends Taro.Component {
   };
 
   navHome() {
-    Taro.navigateTo({
-      url: '/pages/index/index'
-    });
+    Taro.navigateBack();
   }
 
   render() {
-    let navBarMarginTop = _getMenuButtonBoundingClientRect().top + _getMenuButtonBoundingClientRect().height - 20;
+
+    let navBarMarginTop = _getMenuButtonBoundingClientRect().top;
     const style = {
       paddingTop: navBarMarginTop + 'px'
     };
     return <View className="devices" style={style}>
-            <AtNavBar onClickLeftIcon={this.navHome} color="#000" title="空调设置" />
+            <AtNavBar onClickLeftIcon={this.navHome} color="#000" title="空调设置" leftIconType="chevron-left" />
+            <AtList> 
+              <AtListItem isSwitch title="冷气开关" hasBorder={false}
+        // iconInfo={{ size: 25, color: '#78A4FA', value: 'calendar', }}
+        />
+              <AtListItem isSwitch title="暖气开关" hasBorder={false}
+        // iconInfo={{ size: 25, color: '#FF4949', value: 'bookmark', }}
+        />
+            </AtList>
+            
           </View>;
   }
 }

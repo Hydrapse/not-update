@@ -1,0 +1,6 @@
+.devices {
+  background: white; }
+
+.th-calc-setup {
+  padding-top: 60rpx; }
+

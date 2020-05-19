@@ -1,0 +1,3 @@
+<block wx:if="{{$taroCompReady}}">
+    <canvas type="2d" class="techarts-canvas" id="{{canvasId}}" canvas-id="{{canvasId}}" style="{{anonymousState__temp}}" bindtouchstart="anonymousFunc0" bindtouchmove="anonymousFunc1" bindtouchend="anonymousFunc2"></canvas>
+</block>

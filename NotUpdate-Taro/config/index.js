@@ -52,17 +52,11 @@ const config = {
       }
     }
   },
-  weapp: { //额外添加的
-    compile: {
-      include: ['taro-f2']
-    }
-  },
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
     esnextModules: [
-      'taro-ui', 
-      'taro-f2'
+      'taro-ui'
     ],
     postcss: {
       autoprefixer: {

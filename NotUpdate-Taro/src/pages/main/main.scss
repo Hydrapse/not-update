@@ -5,7 +5,7 @@
 }
 
 .tabPanel{
-  padding: 70px 10px;
+  padding: 70px 0px;
   background-color: rgb(250, 250, 252);
   text-align: center;
 }
@@ -63,7 +63,7 @@
   grid-template-rows: 1;
   gap: 20px;
   padding: 0;
-  margin: 0 52px 0px;
+  margin: 0 62px 0px;
   list-style-type: none;
   &__item {
     color: white;
@@ -79,6 +79,11 @@
     }
 
   }
+}
+
+.chart-area {
+  height: 500px;
+  margin: 0 auto;
 }
 
 .active {

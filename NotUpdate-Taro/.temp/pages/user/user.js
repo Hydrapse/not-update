@@ -1,8 +1,8 @@
 import Nerv from "nervjs";
 import Taro from "@tarojs/taro-h5";
-import { View, Text } from '@tarojs/components';
+import { View } from '@tarojs/components';
 
-import { AtButton } from 'taro-ui';
+import { ClTitleBar } from "mp-colorui";
 
 import './user.scss';
 
@@ -31,9 +31,7 @@ export default class User extends Taro.Component {
 
   render() {
     return <View className="user">
-          <View className="pannel_title">123</View>
-          <AtButton type="primary">按钮文案</AtButton>
-          <Text>1232</Text>
+          <ClTitleBar title="我的信息" type="border-title" textColor="grey" borderColor="light-blue" bgColor="none" />
       </View>;
   }
 }

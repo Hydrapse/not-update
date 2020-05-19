@@ -4,6 +4,11 @@ import Taro from "@tarojs/taro-h5";
 import { View, Text } from '@tarojs/components';
 import { AtProgress, AtTabs, AtTabsPane, AtGrid } from 'taro-ui';
 import { ClSearchBar, ClTitleBar, ClIcon, ClSwitch } from "mp-colorui";
+
+//techart+自定义echart
+import EChart from 'techarts';
+import * as echarts from '../../echarts';
+
 import { SubTitle } from "../../components/index";
 import "./main.scss";
 
@@ -62,9 +67,10 @@ export default class Main extends Taro.Component {
         Taro.navigateTo({
           url: '/pages/devices/ac'
         });
+        console.log('调整空调');
         break;
       case 2:
-        console.log('调整空调');
+        console.log('查看温度');
         break;
     }
   }
@@ -89,6 +95,46 @@ export default class Main extends Taro.Component {
 
   render() {
     let { monitorSwitch, logSwitch, deviceSwitch, messageSwitch } = this.state;
+
+    let option = {
+      backgroundColor: '#2c343c',
+      visualMap: {
+        show: false,
+        min: 80,
+        max: 600,
+        inRange: {
+          colorLightness: [0, 1]
+        }
+      },
+      series: [{
+        name: '访问来源',
+        type: 'pie',
+        radius: '55%',
+        data: [{ value: 235, name: '视频广告' }, { value: 274, name: '联盟广告' }, { value: 310, name: '邮件营销' }, { value: 335, name: '直接访问' }, { value: 400, name: '搜索引擎' }],
+        roseType: 'angle',
+        label: {
+          normal: {
+            textStyle: {
+              color: 'rgba(255, 255, 255, 0.3)'
+            }
+          }
+        },
+        labelLine: {
+          normal: {
+            lineStyle: {
+              color: 'rgba(255, 255, 255, 0.3)'
+            }
+          }
+        },
+        itemStyle: {
+          normal: {
+            color: '#c23531',
+            shadowBlur: 200,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+          }
+        }
+      }]
+    };
 
     return <View className="main">
         <ClTitleBar title="NotU 宿舍管理系统" type="border-title" textColor="grey" borderColor="light-blue" bgColor="none" />
@@ -126,11 +172,15 @@ export default class Main extends Taro.Component {
               </View>
             </View>
           </AtTabsPane>
+
           <AtTabsPane current={this.state.pannelCurrent} index={1}>
             <View className="tabPanel">
-              这里是数据展示
+              <View className="chart-area">
+                <EChart echarts={echarts} option={option} />
+              </View>
             </View>
           </AtTabsPane>
+
           <AtTabsPane current={this.state.pannelCurrent} index={2}>
             <View className="tabPanel">
               <AtGrid columnNum={2} data={[{
@@ -157,20 +207,7 @@ export default class Main extends Taro.Component {
         </AtTabs>
         {/* <AtDivider height='80' style='background-color: #FAFBFC;' /> */}
 
-        {/* <AtList> 
-          <AtListItem
-            isSwitch
-            title='冷气开关'
-            hasBorder={false}
-            // iconInfo={{ size: 25, color: '#78A4FA', value: 'calendar', }}
-          />
-          <AtListItem
-            isSwitch
-            title='暖气开关'
-            hasBorder={false}
-            // iconInfo={{ size: 25, color: '#FF4949', value: 'bookmark', }}
-          />
-         </AtList> */}
+        
 
         <SubTitle name="功能入口" />
         

@@ -1,3 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <canvas style="{{'width: ' + width + '; height:' + height}}" class="f2-canvas" canvas-id="{{id}}" id="{{id}}" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" bindlongpress="press" data-e-touchstart-so="this" data-e-touchmove-so="this" data-e-touchend-so="this" data-e-longpress-so="this"></canvas>
-</block>
