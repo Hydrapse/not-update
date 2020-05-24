@@ -62,7 +62,7 @@ var AtTabBar = (_temp2 = _class = function (_AtComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AtTabBar.__proto__ || Object.getPrototypeOf(AtTabBar)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "loopArray9", "tabList", "customStyle", "className", "fixed", "backgroundColor", "current", "color", "iconSize", "fontSize", "selectedColor"], _this.customComponents = ["AtBadge"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AtTabBar.__proto__ || Object.getPrototypeOf(AtTabBar)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "anonymousState__temp2", "loopArray10", "tabList", "customStyle", "className", "fixed", "backgroundColor", "current", "color", "iconSize", "fontSize", "selectedColor"], _this.customComponents = ["AtBadge"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(AtTabBar, [{
@@ -138,7 +138,7 @@ var AtTabBar = (_temp2 = _class = function (_AtComponent) {
         // 'at-tab-bar--ipx': isIPhoneX
       }, className);
       var anonymousState__temp2 = (0, _taroWeapp.internal_inline_style)(this.mergeStyle(rootStyle, customStyle));
-      var loopArray9 = tabList.map(function (item, i) {
+      var loopArray10 = tabList.map(function (item, i) {
         var _classNames;
 
         item = {
@@ -168,38 +168,38 @@ var AtTabBar = (_temp2 = _class = function (_AtComponent) {
         var $loopState__temp28 = item.$original.iconType || item.$original.image ? 0 : Number(item.$original.max);
         var $loopState__temp30 = (0, _taroWeapp.internal_inline_style)(titleStyle);
 
-        var _genCompid = (0, _taroWeapp.genCompid)(__prefix + 'bbzzzzzzzz' + i, true),
+        var _genCompid = (0, _taroWeapp.genCompid)(__prefix + 'bizzzzzzzz' + i, true),
             _genCompid2 = _slicedToArray(_genCompid, 2),
-            $prevCompid__109 = _genCompid2[0],
-            $compid__109 = _genCompid2[1];
+            $prevCompid__160 = _genCompid2[0],
+            $compid__160 = _genCompid2[1];
 
         item.$original.iconType && _taroWeapp.propsManager.set({
           "dot": $loopState__temp8,
           "value": item.$original.text,
           "maxValue": $loopState__temp10
-        }, $compid__109, $prevCompid__109);
+        }, $compid__160, $prevCompid__160);
 
-        var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + 'bczzzzzzzz' + i, true),
+        var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + 'bjzzzzzzzz' + i, true),
             _genCompid4 = _slicedToArray(_genCompid3, 2),
-            $prevCompid__110 = _genCompid4[0],
-            $compid__110 = _genCompid4[1];
+            $prevCompid__161 = _genCompid4[0],
+            $compid__161 = _genCompid4[1];
 
         item.$original.image && _taroWeapp.propsManager.set({
           "dot": $loopState__temp16,
           "value": item.$original.text,
           "maxValue": $loopState__temp18
-        }, $compid__110, $prevCompid__110);
+        }, $compid__161, $prevCompid__161);
 
-        var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + 'bdzzzzzzzz' + i, true),
+        var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + 'cazzzzzzzz' + i, true),
             _genCompid6 = _slicedToArray(_genCompid5, 2),
-            $prevCompid__111 = _genCompid6[0],
-            $compid__111 = _genCompid6[1];
+            $prevCompid__162 = _genCompid6[0],
+            $compid__162 = _genCompid6[1];
 
         _taroWeapp.propsManager.set({
           "dot": item.$original.iconType || item.$original.image ? false : !!item.$original.dot,
           "value": item.$original.iconType || item.$original.image ? '' : item.$original.text,
           "maxValue": $loopState__temp28
-        }, $compid__111, $prevCompid__111);
+        }, $compid__162, $prevCompid__162);
         return {
           $loopState__temp4: $loopState__temp4,
           $loopState__temp6: $loopState__temp6,
@@ -215,16 +215,16 @@ var AtTabBar = (_temp2 = _class = function (_AtComponent) {
           $loopState__temp26: $loopState__temp26,
           $loopState__temp28: $loopState__temp28,
           $loopState__temp30: $loopState__temp30,
-          $compid__109: $compid__109,
-          $compid__110: $compid__110,
-          $compid__111: $compid__111,
+          $compid__160: $compid__160,
+          $compid__161: $compid__161,
+          $compid__162: $compid__162,
           $original: item.$original
         };
       });
       Object.assign(this.__state, {
         anonymousState__temp: anonymousState__temp,
         anonymousState__temp2: anonymousState__temp2,
-        loopArray9: loopArray9,
+        loopArray10: loopArray10,
         tabList: tabList
       });
       return this.__state;

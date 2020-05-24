@@ -1,0 +1,11 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="mine-footer">
+        <block wx:if="{{props.isLogged}}">
+            <logout compid="{{$compid__142}}"></logout>
+        </block>
+        <view class="tuture-motto">{{props.isLogged ? 'NotUpdate ❤' : '您还未登录'}}</view>
+        <at-float-layout compid="{{$compid__143}}">
+            <login-form compid="{{$compid__144}}"></login-form>
+        </at-float-layout>
+    </view>
+</block>

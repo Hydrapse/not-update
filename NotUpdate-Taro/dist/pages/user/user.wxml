@@ -1,5 +1,22 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="user">
-        <cl-title-bar compid="{{$compid__95}}"></cl-title-bar>
+        <cl-title-bar compid="{{$compid__126}}"></cl-title-bar>
+        <view class="portrait" bindtap="anonymousFunc0">
+            <at-avatar compid="{{$compid__127}}"></at-avatar>
+            <view class="nickName">{{nickName}}<text class="domitory">11舍 414</text>
+            </view>
+        </view>
+        <view style="padding-bottom: 0px;">
+            <at-list>
+                <at-list-item compid="{{$compid__128}}"></at-list-item>
+                <at-list-item compid="{{$compid__129}}"></at-list-item>
+                <at-toast compid="{{$compid__130}}"></at-toast>
+                <at-list-item compid="{{$compid__131}}"></at-list-item>
+            </at-list>
+        </view>
+        <sub-title compid="{{$compid__132}}"></sub-title>
+        <at-range compid="{{$compid__133}}"></at-range>
+        <sub-title compid="{{$compid__134}}"></sub-title>
+        <at-range compid="{{$compid__135}}"></at-range>
     </view>
 </block>

@@ -58,7 +58,7 @@ var TemperatureChart = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = TemperatureChart.__proto__ || Object.getPrototypeOf(TemperatureChart)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["$compid__97"], _this.customComponents = ["EChart"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = TemperatureChart.__proto__ || Object.getPrototypeOf(TemperatureChart)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["$compid__137"], _this.customComponents = ["EChart"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(TemperatureChart, [{
@@ -77,10 +77,10 @@ var TemperatureChart = (_temp2 = _class = function (_BaseComponent) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__97"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__137"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__97 = _genCompid2[0],
-          $compid__97 = _genCompid2[1];
+          $prevCompid__137 = _genCompid2[0],
+          $compid__137 = _genCompid2[1];
 
       var option = {
         tooltip: {
@@ -116,13 +116,13 @@ var TemperatureChart = (_temp2 = _class = function (_BaseComponent) {
         },
         legend: {
           data: ['湿度%', '温度°C', '平均温度'],
-          top: '13%'
+          top: '10%'
         },
         xAxis: [{
           // show: false,
           type: 'category',
           color: '#59588D',
-          data: ['05-14', '05-15', '05-16', '05-17', '05-18', '05-19', '05-20', '05-21', '05-22', '05-23', '05-24', '05-25', '05-26', '05-27', '05-28'],
+          data: ['04-22', '04-23', '04-24', '04-25', '04-26', '04-27', '04-28', '04-29', '04-30', '05-01', '05-02', '05-03', '05-04', '05-05', '05-06', '05-07', '05-08', '05-09', '05-10', '05-11', '05-12', '05-13', '05-14', '05-15', '05-16', '05-17', '05-18', '05-19', '05-20', '05-21'],
           axisLabel: {
             margin: 20,
             color: '#999',
@@ -201,8 +201,8 @@ var TemperatureChart = (_temp2 = _class = function (_BaseComponent) {
         }],
         dataZoom: [{
           type: 'inside',
-          startValue: 5,
-          endValue: 9,
+          startValue: 26,
+          endValue: 30,
           filterMode: 'filter'
         }, {
           start: 0,
@@ -220,7 +220,7 @@ var TemperatureChart = (_temp2 = _class = function (_BaseComponent) {
         series: [{
           type: 'bar',
           name: '湿度%',
-          data: [70, 90, 80, 60, 56, 40, 50, 70, 60, 56, 40, 50, 70, 45, 56],
+          data: [70, 90, 80, 60, 70, 90, 80, 60, 56, 40, 50, 70, 60, 56, 40, 50, 70, 45, 56, 56, 40, 50, 70, 60, 56, 40, 50, 70, 45, 56],
           itemStyle: {
             normal: {
               color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -244,7 +244,7 @@ var TemperatureChart = (_temp2 = _class = function (_BaseComponent) {
         }, {
           type: 'bar',
           name: '温度°C',
-          data: [32, 29, 20, 16, 24, 22, 26, 20, 18, 24, 27, 29, 26, 28, 24],
+          data: [32, 29, 20, 16, 32, 29, 20, 16, 24, 22, 26, 20, 18, 24, 27, 29, 26, 28, 24, 24, 22, 26, 20, 18, 24, 27, 29, 26, 28, 24],
           yAxisIndex: 1,
           itemStyle: {
             normal: {
@@ -268,7 +268,7 @@ var TemperatureChart = (_temp2 = _class = function (_BaseComponent) {
         }, {
           type: 'line',
           name: '平均温度',
-          data: [20, 20, 20, 17, 17, 17, 23, 23, 23, 24, 24, 24, 27, 27, 27, 25, 25, 25],
+          data: [20, 20, 20, 17, 17, 17, 20, 20, 20, 17, 17, 17, 23, 23, 23, 24, 24, 24, 27, 27, 27, 25, 25, 25, 23, 23, 23, 24, 24, 24, 27, 27, 27, 25, 25, 25],
           smooth: true,
           symbol: 'none',
           yAxisIndex: 1,
@@ -289,9 +289,9 @@ var TemperatureChart = (_temp2 = _class = function (_BaseComponent) {
       _taroWeapp.propsManager.set({
         "echarts": echarts,
         "option": option
-      }, $compid__97, $prevCompid__97);
+      }, $compid__137, $prevCompid__137);
       Object.assign(this.__state, {
-        $compid__97: $compid__97
+        $compid__137: $compid__137
       });
       return this.__state;
     }

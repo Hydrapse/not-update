@@ -44,13 +44,13 @@ export default class TemperatureChart extends Component {
         },
         legend: {
             data: ['湿度%', '温度°C', '平均温度'],
-            top: '13%',
+            top: '10%',
         },
         xAxis: [{
             // show: false,
             type: 'category',
             color: '#59588D',
-            data: ['05-14', '05-15', '05-16', '05-17', '05-18', '05-19', '05-20', '05-21', '05-22', '05-23', '05-24', '05-25', '05-26', '05-27', '05-28'],
+            data: ['04-22', '04-23', '04-24', '04-25', '04-26', '04-27', '04-28', '04-29', '04-30', '05-01', '05-02', '05-03', '05-04', '05-05','05-06', '05-07', '05-08', '05-09', '05-10', '05-11', '05-12', '05-13', '05-14', '05-15', '05-16', '05-17', '05-18', '05-19', '05-20', '05-21'],
             axisLabel: {
                 margin: 20,
                 color: '#999',
@@ -131,8 +131,8 @@ export default class TemperatureChart extends Component {
         ],
         dataZoom: [{
             type: 'inside',
-            startValue: 5,
-            endValue: 9,
+            startValue: 26,
+            endValue: 30,
             filterMode: 'filter'
         }, {
             start: 0,
@@ -150,7 +150,7 @@ export default class TemperatureChart extends Component {
         series: [{
                 type: 'bar',
                 name: '湿度%',
-                data: [70, 90, 80, 60, 56, 40, 50, 70, 60, 56, 40, 50, 70, 45, 56],
+                data: [70, 90, 80, 60, 70, 90, 80, 60, 56, 40, 50, 70, 60, 56, 40, 50, 70, 45, 56, 56, 40, 50, 70, 60, 56, 40, 50, 70, 45, 56],
                 itemStyle: {
                     normal: {
                         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -175,7 +175,7 @@ export default class TemperatureChart extends Component {
             {
                 type: 'bar',
                 name: '温度°C',
-                data: [32, 29, 20, 16, 24, 22, 26, 20, 18, 24, 27, 29, 26, 28, 24],
+                data: [32, 29, 20, 16, 32, 29, 20, 16, 24, 22, 26, 20, 18, 24, 27, 29, 26, 28, 24, 24, 22, 26, 20, 18, 24, 27, 29, 26, 28, 24],
                 yAxisIndex: 1,
                 itemStyle: {
                     normal: {
@@ -200,7 +200,7 @@ export default class TemperatureChart extends Component {
             {
                 type: 'line',
                 name: '平均温度',
-                data: [20, 20, 20, 17, 17, 17, 23, 23, 23, 24, 24, 24, 27, 27, 27, 25, 25, 25],
+                data: [20, 20, 20, 17, 17, 17, 20, 20, 20, 17, 17, 17, 23, 23, 23, 24, 24, 24, 27, 27, 27, 25, 25, 25, 23, 23, 23, 24, 24, 24, 27, 27, 27, 25, 25, 25],
                 smooth: true,
                 symbol: 'none',
                 yAxisIndex: 1,

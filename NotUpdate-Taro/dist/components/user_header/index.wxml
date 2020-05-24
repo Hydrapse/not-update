@@ -1,0 +1,14 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="user-box">
+        <at-message></at-message>
+        <logged-mine compid="{{$compid__138}}"></logged-mine>
+        <block wx:if="{{!props.isLogged}}">
+            <view class="login-button-box">
+                <login-button compid="{{$compid__139}}"></login-button>
+                <block wx:if="{{isWeapp}}">
+                    <weapp-login-button compid="{{$compid__140}}"></weapp-login-button>
+                </block>
+            </view>
+        </block>
+    </view>
+</block>

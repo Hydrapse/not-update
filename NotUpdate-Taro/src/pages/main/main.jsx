@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
-import { AtProgress, AtTabs, AtTabsPane, AtGrid, AtInputNumber, AtForm, AtSwitch, AtList, AtListItem } from 'taro-ui'
+import { View, Text, Button } from '@tarojs/components'
+import { AtProgress, AtTabs, AtTabsPane, AtGrid, AtInputNumber, AtForm, AtSwitch, AtList, AtListItem, AtModal, AtModalHeader, AtModalContent, AtModalAction } from 'taro-ui'
 import { ClSearchBar, ClTitleBar, ClGrid, ClIcon, ClSwitch, ClCard, ClText } from "mp-colorui";
 
 import {SubTitle, ElectricFee} from "../../components"
@@ -17,7 +17,9 @@ export default class Main extends Component {
       monitorSwitch: true,
       logSwitch: false,
       deviceSwitch: true,
-      messageSwitch: false
+      messageSwitch: false,
+      actemp: 24,
+      doorWarning: false
     }
   }
 
@@ -40,15 +42,23 @@ export default class Main extends Component {
 
   //搜索栏输入处理
   handleInput (value){
+    
     console.log('搜索栏正在输入' + value);
     if(value == ''){
       this.setState({
       showSearchResult: false
       })
     }else{
-      this.setState({
-      showSearchResult: true
-      })
+      if(value=='监控'){
+        this.setState({
+          showSearchResult: true
+        })
+      }
+      else if(value=='自'){
+        this.setState({
+          showSearchResult: true
+        })
+      }
     }
     
   }
@@ -68,6 +78,14 @@ export default class Main extends Component {
           url: '/pages/devices/ac'
         })
         console.log('调整空调')
+
+        //作弊
+        // setTimeout(()=>{
+        //   this.setState({
+        //   actemp: 16
+        // })
+        // }, 5000)
+        
         break;
       case 2:
         Taro.navigateTo({
@@ -104,6 +122,7 @@ export default class Main extends Component {
 
 
   render () {
+    let routes = ['monitor', 'ac', 'h']
     let{ monitorSwitch, logSwitch, deviceSwitch, messageSwitch } = this.state
     return (
       <View className='main'>
@@ -116,9 +135,17 @@ export default class Main extends Component {
           onInput={this.handleInput.bind(this)}
           showResult={this.state.showSearchResult} //显示搜索结果
           result={[
-            {title: '监控查询', desc: '近期记录'}, 
-            {title: '门窗状态', desc: '是否长时间未关闭'}
+            // {title: '监控录像', desc: '近期记录'}, 
+            // {title: '监控直播', desc: '实时直播'},
+            {title: '新自动化', desc: '条件执行'},
           ]}
+          onTouchResult={(index) => { //TODO:应当用index去找列表里的地址
+            Taro.navigateTo({
+              // url:'/pages/devices/'
+              url: '/pages/autocontrol/autocontrol'
+              // url: '/pages/monitor/monitor'
+            })
+          }}
           onBlur={()=>{this.setState({showSearchResult: false})}} //关闭搜索结果
         />
         
@@ -139,7 +166,7 @@ export default class Main extends Component {
                   onClick={this.FuncCardClick.bind(this, 1)}
                 >
                   <View>
-                    <Text className='bold-number'>24</Text>
+                    <Text className='bold-number'>{this.state.actemp}</Text>
                     <Text>°C</Text>
                   </View>
                   <View>空调温度</View>
@@ -256,14 +283,14 @@ export default class Main extends Component {
           <View className='function-list__item'>
             <View className='function'>
               <View className='function-icon' style='background-color: white;color: hsl(240, 56%, 90%);'>
-                <ClIcon iconName='newsfill' size='xsmall'></ClIcon>
+                <ClIcon iconName='lightfill' size='xsmall'></ClIcon>
               </View>
               <View className='function-menu' style='color: hsl(240, 56%, 90%);'>
                 <ClIcon iconName='moreandroid' size='xsmall'></ClIcon>
               </View>
             </View>
             <View className='function-data'>
-              <View className='function-name'> 短信提醒</View>
+              <View className='function-name'> 定时断电</View>
               <ClSwitch type='normal' checked={messageSwitch} color='olive' onChange={(e)=>{console.log(e)}} />
             </View>
           </View>
@@ -317,6 +344,7 @@ export default class Main extends Component {
           </View>
         </View>
 
+
         {/* <View className='funcArea'>
           <ClGrid col={2}>
             <View onClick={this.FuncCardClick.bind(this, 1)} >
@@ -341,6 +369,20 @@ export default class Main extends Component {
             </View>
           </ClGrid> 
          */}
+         <AtModal isOpened={this.state.doorWarning}>
+          <AtModalHeader>警报</AtModalHeader>
+          <View style='height:60px'>
+            <AtModalContent>
+            <View className='door-model-content'>
+              房门超过指定时间未关</View>
+          </AtModalContent>
+          </View>
+          
+          <AtModalAction> 
+            <Button onClick={()=>{this.setState({doorWarning: false})}}>取消</Button>
+             <Button>查看监控</Button> 
+             </AtModalAction>
+        </AtModal>
       </View>
 
     )

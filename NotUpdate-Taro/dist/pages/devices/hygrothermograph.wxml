@@ -9,10 +9,10 @@
                 <at-list>
                     <at-list-item compid="{{$compid__90}}"></at-list-item>
                     <at-list-item compid="{{$compid__91}}"></at-list-item>
-                    <at-list-item compid="{{$compid__92}}"></at-list-item>
-                    <at-list-item compid="{{$compid__93}}"></at-list-item>
-                    <at-list-item compid="{{$compid__94}}"></at-list-item>
                 </at-list>
+                <view style="padding-top: 35px">
+                    <at-button compid="{{$compid__92}}">数据导出</at-button>
+                </view>
             </view>
         </view>
     </view>

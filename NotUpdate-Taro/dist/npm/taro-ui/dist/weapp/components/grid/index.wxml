@@ -3,8 +3,8 @@
         <view></view>
     </block>
     <view class="{{anonymousState__temp}}" wx:else>
-        <view class="at-grid__flex" wx:key="$loopState__temp3" wx:for="{{loopArray8}}" wx:for-item="item" wx:for-index="i">
-            <view wx:key="$loopState__temp5" class="{{childItem.$loopState__temp7}}" bindtap="handleClick" style="{{childItem.$loopState__temp9}}" wx:for="{{item.$anonymousCallee__1}}" wx:for-item="childItem" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{childItem.$original}}" data-e-tap-a-b="{{index}}" data-e-tap-a-c="{{i}}">
+        <view class="at-grid__flex" wx:key="$loopState__temp3" wx:for="{{loopArray9}}" wx:for-item="item" wx:for-index="i">
+            <view wx:key="$loopState__temp5" class="{{childItem.$loopState__temp7}}" bindtap="handleClick" style="{{childItem.$loopState__temp9}}" wx:for="{{item.$anonymousCallee__2}}" wx:for-item="childItem" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{childItem.$original}}" data-e-tap-a-b="{{index}}" data-e-tap-a-c="{{i}}">
                 <view class="at-grid-item__content">
                     <view class="at-grid-item__content-inner">
                         <view class="content-inner__icon">

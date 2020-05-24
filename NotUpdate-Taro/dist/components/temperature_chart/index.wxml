@@ -1,5 +1,5 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="temperature-chart">
-        <e-chart compid="{{$compid__97}}"></e-chart>
+        <e-chart compid="{{$compid__137}}"></e-chart>
     </view>
 </block>

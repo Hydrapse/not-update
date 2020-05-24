@@ -1,0 +1,6 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="mine">
+        <user-header compid="{{$compid__94}}"></user-header>
+        <user-footer compid="{{$compid__95}}"></user-footer>
+    </view>
+</block>

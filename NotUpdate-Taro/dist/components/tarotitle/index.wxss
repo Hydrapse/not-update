@@ -1,11 +1,12 @@
 .tarotitle {
   display: flex;
   margin: 30rpx 22rpx 0;
-  padding: 0 20rpx;
+  padding: 0 15rpx;
   color: #6a6a77;
   font-size: 30rpx;
   font-weight: 600;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 .bar {
   content: "";
   display: inline-block;
@@ -15,4 +16,5 @@
   height: 35rpx;
   background-color: #6190e8;
   box-shadow: 0 0.14933rem 0.256rem 0 rgba(97, 144, 232, 0.2);
-  border-radius: 1PX; }
+  border-radius: 1PX;
+}

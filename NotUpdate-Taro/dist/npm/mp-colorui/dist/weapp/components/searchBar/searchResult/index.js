@@ -52,7 +52,7 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSearchResult.__proto__ || Object.getPrototypeOf(ClSearchResult)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp3", "anonymousState__temp4", "loopArray6", "$compid__105", "$compid__106", "$compid__107", "result", "showLoading"], _this.anonymousFunc0Map = {}, _this.customComponents = ["ClLayout", "ClText", "ClIcon", "ClFlex"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ClSearchResult.__proto__ || Object.getPrototypeOf(ClSearchResult)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp3", "anonymousState__temp4", "loopArray7", "$compid__155", "$compid__156", "$compid__157", "result", "showLoading"], _this.anonymousFunc0Map = {}, _this.customComponents = ["ClLayout", "ClText", "ClIcon", "ClFlex"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(ClSearchResult, [{
@@ -73,20 +73,20 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__105"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__155"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__105 = _genCompid2[0],
-          $compid__105 = _genCompid2[1];
+          $prevCompid__155 = _genCompid2[0],
+          $compid__155 = _genCompid2[1];
 
-      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__106"),
+      var _genCompid3 = (0, _taroWeapp.genCompid)(__prefix + "$compid__156"),
           _genCompid4 = _slicedToArray(_genCompid3, 2),
-          $prevCompid__106 = _genCompid4[0],
-          $compid__106 = _genCompid4[1];
+          $prevCompid__156 = _genCompid4[0],
+          $compid__156 = _genCompid4[1];
 
-      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__107"),
+      var _genCompid5 = (0, _taroWeapp.genCompid)(__prefix + "$compid__157"),
           _genCompid6 = _slicedToArray(_genCompid5, 2),
-          $prevCompid__107 = _genCompid6[0],
-          $compid__107 = _genCompid6[1];
+          $prevCompid__157 = _genCompid6[0],
+          $compid__157 = _genCompid6[1];
 
       var props = this.__props;
 
@@ -107,76 +107,76 @@ var ClSearchResult = (_temp2 = _class = function (_Taro$Component) {
       var onTouchResult = props.onTouchResult;
       var anonymousState__temp3 = (0, _index.classNames)(props.className);
       var anonymousState__temp4 = (0, _taroWeapp.internal_inline_style)(Object.assign({ width: "100%" }, props.style));
-      var loopArray6 = result.map(function (item, index) {
+      var loopArray7 = result.map(function (item, index) {
         item = {
           $original: (0, _taroWeapp.internal_get_original)(item)
         };
         var $loopState__temp2 = "key-" + index;
 
-        var _$indexKey = "hzzzz" + index;
+        var _$indexKey = "bezzz" + index;
 
         _this2.anonymousFunc0Map[_$indexKey] = function () {
           onTouchResult(index);
         };
 
-        var _genCompid7 = (0, _taroWeapp.genCompid)(__prefix + "izzzzzzzzz" + index, true),
+        var _genCompid7 = (0, _taroWeapp.genCompid)(__prefix + "bfzzzzzzzz" + index, true),
             _genCompid8 = _slicedToArray(_genCompid7, 2),
-            $prevCompid__102 = _genCompid8[0],
-            $compid__102 = _genCompid8[1];
+            $prevCompid__152 = _genCompid8[0],
+            $compid__152 = _genCompid8[1];
 
         _taroWeapp.propsManager.set({
           "padding": "small",
           "paddingDirection": "vertical"
-        }, $compid__102, $prevCompid__102);
+        }, $compid__152, $prevCompid__152);
 
-        var _genCompid9 = (0, _taroWeapp.genCompid)(__prefix + "jzzzzzzzzz" + index, true),
+        var _genCompid9 = (0, _taroWeapp.genCompid)(__prefix + "bgzzzzzzzz" + index, true),
             _genCompid10 = _slicedToArray(_genCompid9, 2),
-            $prevCompid__103 = _genCompid10[0],
-            $compid__103 = _genCompid10[1];
+            $prevCompid__153 = _genCompid10[0],
+            $compid__153 = _genCompid10[1];
 
         _taroWeapp.propsManager.set({
           "text": item.$original.title,
           "size": "large"
-        }, $compid__103, $prevCompid__103);
+        }, $compid__153, $prevCompid__153);
 
-        var _genCompid11 = (0, _taroWeapp.genCompid)(__prefix + "bazzzzzzzz" + index, true),
+        var _genCompid11 = (0, _taroWeapp.genCompid)(__prefix + "bhzzzzzzzz" + index, true),
             _genCompid12 = _slicedToArray(_genCompid11, 2),
-            $prevCompid__104 = _genCompid12[0],
-            $compid__104 = _genCompid12[1];
+            $prevCompid__154 = _genCompid12[0],
+            $compid__154 = _genCompid12[1];
 
         _taroWeapp.propsManager.set({
           "text": item.$original.desc,
           "size": "xsmall",
           "cut": true
-        }, $compid__104, $prevCompid__104);
+        }, $compid__154, $prevCompid__154);
         return {
           $loopState__temp2: $loopState__temp2,
           _$indexKey: _$indexKey,
-          $compid__102: $compid__102,
-          $compid__103: $compid__103,
-          $compid__104: $compid__104,
+          $compid__152: $compid__152,
+          $compid__153: $compid__153,
+          $compid__154: $compid__154,
           $original: item.$original
         };
       });
       _taroWeapp.propsManager.set({
         "padding": "normal",
         "paddingDirection": "vertical"
-      }, $compid__105, $prevCompid__105);
+      }, $compid__155, $prevCompid__155);
       _taroWeapp.propsManager.set({
         "iconName": "loading2"
-      }, $compid__106, $prevCompid__106);
+      }, $compid__156, $prevCompid__156);
       _taroWeapp.propsManager.set({
         "direction": "column",
         "align": "center",
         "justify": "center"
-      }, $compid__107, $prevCompid__107);
+      }, $compid__157, $prevCompid__157);
       Object.assign(this.__state, {
         anonymousState__temp3: anonymousState__temp3,
         anonymousState__temp4: anonymousState__temp4,
-        loopArray6: loopArray6,
-        $compid__105: $compid__105,
-        $compid__106: $compid__106,
-        $compid__107: $compid__107,
+        loopArray7: loopArray7,
+        $compid__155: $compid__155,
+        $compid__156: $compid__156,
+        $compid__157: $compid__157,
         result: result,
         showLoading: showLoading
       });

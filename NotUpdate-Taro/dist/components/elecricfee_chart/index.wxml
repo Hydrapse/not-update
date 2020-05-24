@@ -1,7 +1,7 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="electricfee">
         <view class="electricfee-chart">
-            <e-chart compid="{{$compid__96}}"></e-chart>
+            <e-chart compid="{{$compid__136}}"></e-chart>
         </view>
         <view class="money">
             <view class="sub-title">剩余电费</view>

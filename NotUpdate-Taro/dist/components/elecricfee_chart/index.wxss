@@ -7,17 +7,21 @@
   background-color: white;
   border-radius: 40rpx;
   box-shadow: 0 2rpx 12rpx 0 rgba(0, 0, 0, 0.05);
-  height: 290rpx; }
+  height: 290rpx;
+}
 .money {
   padding-top: 32%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 .money .sub-title {
-    padding-left: 10rpx;
-    font-size: 28rpx;
-    color: #c8c8c8;
-    margin-bottom: 10rpx; }
+  padding-left: 10rpx;
+  font-size: 28rpx;
+  color: #c8c8c8;
+  margin-bottom: 10rpx;
+}
 .money .number {
-    font-size: 50rpx;
-    font-weight: 700; }
+  font-size: 50rpx;
+  font-weight: 700;
+}

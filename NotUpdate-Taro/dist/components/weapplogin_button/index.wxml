@@ -1,0 +1,3 @@
+<block wx:if="{{$taroCompReady}}">
+    <button open-type="getUserInfo" bindgetuserinfo="anonymousFunc0" type="primary" class="login-button" loading="{{isLogin}}">微信登录</button>
+</block>

@@ -50,9 +50,9 @@ var Ac = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Ac.__proto__ || Object.getPrototypeOf(Ac)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "$compid__87", "$compid__88", "$compid__89", "$compid__90", "$compid__91", "$compid__92", "$compid__93", "$compid__94"], _this.config = {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Ac.__proto__ || Object.getPrototypeOf(Ac)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["anonymousState__temp", "$compid__87", "$compid__88", "$compid__89", "$compid__90", "$compid__91", "$compid__92"], _this.config = {
       navigationBarTitleText: '温湿度计设置'
-    }, _this.customComponents = ["AtNavBar", "TaroTitle", "Temperature", "AtList", "AtListItem"], _temp), _possibleConstructorReturn(_this, _ret);
+    }, _this.customComponents = ["AtNavBar", "TaroTitle", "Temperature", "AtList", "AtListItem", "AtButton"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Ac, [{
@@ -106,16 +106,6 @@ var Ac = (_temp2 = _class = function (_BaseComponent) {
           $prevCompid__92 = _genCompid12[0],
           $compid__92 = _genCompid12[1];
 
-      var _genCompid13 = (0, _taroWeapp.genCompid)(__prefix + "$compid__93"),
-          _genCompid14 = _slicedToArray(_genCompid13, 2),
-          $prevCompid__93 = _genCompid14[0],
-          $compid__93 = _genCompid14[1];
-
-      var _genCompid15 = (0, _taroWeapp.genCompid)(__prefix + "$compid__94"),
-          _genCompid16 = _slicedToArray(_genCompid15, 2),
-          $prevCompid__94 = _genCompid16[0],
-          $compid__94 = _genCompid16[1];
-
       var navBarMarginTop = _taroWeapp2.default.getMenuButtonBoundingClientRect().top;
       var style = {
         paddingTop: navBarMarginTop + 'px'
@@ -135,29 +125,20 @@ var Ac = (_temp2 = _class = function (_BaseComponent) {
       }, $compid__89, $prevCompid__89);
       _taroWeapp.propsManager.set({
         "isSwitch": true,
-        "title": "\u51B7\u6C14\u5F00\u5173",
-        "hasBorder": false
+        "title": "\u6E29\u5EA6\u8BA1\u5F00\u5173",
+        "hasBorder": false,
+        "switchIsCheck": true
       }, $compid__90, $prevCompid__90);
       _taroWeapp.propsManager.set({
         "isSwitch": true,
-        "title": "\u6696\u6C14\u5F00\u5173",
-        "hasBorder": false
+        "title": "\u6E7F\u5EA6\u8BA1\u5F00\u5173",
+        "hasBorder": false,
+        "switchIsCheck": true
       }, $compid__91, $prevCompid__91);
       _taroWeapp.propsManager.set({
-        "isSwitch": true,
-        "title": "\u6696\u6C14\u5F00\u5173",
-        "hasBorder": false
+        "circle": true,
+        "type": "primary"
       }, $compid__92, $prevCompid__92);
-      _taroWeapp.propsManager.set({
-        "isSwitch": true,
-        "title": "\u6696\u6C14\u5F00\u5173",
-        "hasBorder": false
-      }, $compid__93, $prevCompid__93);
-      _taroWeapp.propsManager.set({
-        "isSwitch": true,
-        "title": "\u6696\u6C14\u5F00\u5173",
-        "hasBorder": false
-      }, $compid__94, $prevCompid__94);
       Object.assign(this.__state, {
         anonymousState__temp: anonymousState__temp,
         $compid__87: $compid__87,
@@ -165,9 +146,7 @@ var Ac = (_temp2 = _class = function (_BaseComponent) {
         $compid__89: $compid__89,
         $compid__90: $compid__90,
         $compid__91: $compid__91,
-        $compid__92: $compid__92,
-        $compid__93: $compid__93,
-        $compid__94: $compid__94
+        $compid__92: $compid__92
       });
       return this.__state;
     }

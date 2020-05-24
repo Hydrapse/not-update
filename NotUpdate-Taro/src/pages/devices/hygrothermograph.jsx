@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { AtNavBar, AtList, AtListItem} from "taro-ui"
+import { AtNavBar, AtList, AtListItem, AtButton } from "taro-ui"
 
 import {Temperature, TaroTitle} from "../../components"
 
@@ -46,35 +46,23 @@ export default class Ac extends Component{
                 <AtList> 
                   <AtListItem
                     isSwitch
-                    title='冷气开关'
+                    title='温度计开关'
                     hasBorder={false}
+                    switchIsCheck
                     // iconInfo={{ size: 25, color: '#78A4FA', value: 'calendar', }}
                   />
                   <AtListItem
                     isSwitch
-                    title='暖气开关'
+                    title='湿度计开关'
                     hasBorder={false}
-                    // iconInfo={{ size: 25, color: '#FF4949', value: 'bookmark', }}
-                  />  
-                  <AtListItem
-                    isSwitch
-                    title='暖气开关'
-                    hasBorder={false}
-                    // iconInfo={{ size: 25, color: '#FF4949', value: 'bookmark', }}
-                  />  
-                  <AtListItem
-                    isSwitch
-                    title='暖气开关'
-                    hasBorder={false}
-                    // iconInfo={{ size: 25, color: '#FF4949', value: 'bookmark', }}
-                  />  
-                  <AtListItem
-                    isSwitch
-                    title='暖气开关'
-                    hasBorder={false}
+                    switchIsCheck
                     // iconInfo={{ size: 25, color: '#FF4949', value: 'bookmark', }}
                   />  
                 </AtList>
+                <View style='padding-top: 35px'>
+                  <AtButton circle type='primary'>数据导出</AtButton>
+                </View>
+                
               </View>
             
             </View>

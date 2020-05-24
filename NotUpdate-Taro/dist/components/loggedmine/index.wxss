@@ -1,0 +1,19 @@
+.logged-mine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mine-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.mine-nickName {
+  font-size: 40;
+  margin-top: 20rpx;
+}
+.mine-username {
+  font-size: 32rpx;
+  margin-top: 16rpx;
+  color: #777;
+}

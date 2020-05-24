@@ -1,3 +1,4 @@
 .temperature-chart {
   height: 750rpx;
-  margin-bottom: 50rpx; }
+  margin-bottom: 50rpx;
+}

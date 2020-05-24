@@ -1,19 +1,19 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="{{anonymousState__temp3}}" style="{{anonymousState__temp4}}">
-        <cl-flex compid="{{$compid__107}}">
+        <cl-flex compid="{{$compid__157}}">
             <block>
                 <block wx:if="{{showLoading}}">
-                    <cl-layout compid="{{$compid__105}}">
+                    <cl-layout compid="{{$compid__155}}">
                         <view class="cl_search_loading">
-                            <cl-icon compid="{{$compid__106}}"></cl-icon>
+                            <cl-icon compid="{{$compid__156}}"></cl-icon>
                         </view>
                     </cl-layout>
                 </block>
                 <block wx:else>
-                    <view wx:key="$loopState__temp2" class="cl_search_result solid-bottom" bindtap="anonymousFunc0" wx:for="{{loopArray6}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
-                        <cl-layout compid="{{item.$compid__102}}">
-                            <cl-text compid="{{item.$compid__103}}"></cl-text>
-                            <cl-text compid="{{item.$compid__104}}"></cl-text>
+                    <view wx:key="$loopState__temp2" class="cl_search_result solid-bottom" bindtap="anonymousFunc0" wx:for="{{loopArray7}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                        <cl-layout compid="{{item.$compid__152}}">
+                            <cl-text compid="{{item.$compid__153}}"></cl-text>
+                            <cl-text compid="{{item.$compid__154}}"></cl-text>
                         </cl-layout>
                     </view>
                 </block>

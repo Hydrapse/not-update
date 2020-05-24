@@ -3,7 +3,7 @@
         <view class="{{anonymousState__temp3}}">
             <block wx:if="{{props.title && props.title.text}}">
                 <view class="cu_card__title-line padding">
-                    <cl-text compid="{{$compid__101}}"></cl-text>
+                    <cl-text compid="{{$compid__151}}"></cl-text>
                 </view>
             </block>
             <slot name="title"></slot>

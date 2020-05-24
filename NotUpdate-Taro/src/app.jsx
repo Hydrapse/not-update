@@ -23,7 +23,10 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/devices/ac',
-      'pages/devices/hygrothermograph'
+      'pages/devices/hygrothermograph',
+      'pages/mine/mine',
+      // 'pages/monitor/monitor',
+      'pages/autocontrol/autocontrol'
       // 'pages/demo/demo', //每次添加页面都需要在这里配置
     ],
     window: {
@@ -33,6 +36,26 @@ class App extends Component {
       navigationBarTextStyle: 'black',
       navigationStyle: 'custom',
     },
+    // subPackages:[
+    //   {
+    //     "root": "pages/index",
+    //     "pages": [
+    //       "index"
+    //     ]
+    //   }, {
+    //     "root": "pages/devices/",
+    //     "pages": [
+    //       "ac",
+    //       "hygrothermograph",
+    //     ]
+    //   },{
+    //     "root": "pages/mine/",
+    //     "pages": [
+    //       "mine",
+    //     ]
+    //   }
+    // ]
+
     
   }
 

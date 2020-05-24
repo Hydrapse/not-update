@@ -56,7 +56,9 @@ var _App = function (_BaseComponent) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = _App.__proto__ || Object.getPrototypeOf(_App)).call.apply(_ref, [this].concat(args))), _this), _this.config = {
-      pages: ['pages/index/index', 'pages/devices/ac', 'pages/devices/hygrothermograph'
+      pages: ['pages/index/index', 'pages/devices/ac', 'pages/devices/hygrothermograph', 'pages/mine/mine',
+      // 'pages/monitor/monitor',
+      'pages/autocontrol/autocontrol'
       // 'pages/demo/demo', //每次添加页面都需要在这里配置
       ],
       window: {
@@ -65,6 +67,26 @@ var _App = function (_BaseComponent) {
         navigationBarTitleText: 'WeChat',
         navigationBarTextStyle: 'black',
         navigationStyle: 'custom'
+        // subPackages:[
+        //   {
+        //     "root": "pages/index",
+        //     "pages": [
+        //       "index"
+        //     ]
+        //   }, {
+        //     "root": "pages/devices/",
+        //     "pages": [
+        //       "ac",
+        //       "hygrothermograph",
+        //     ]
+        //   },{
+        //     "root": "pages/mine/",
+        //     "pages": [
+        //       "mine",
+        //     ]
+        //   }
+        // ]
+
 
         // 在 App 类中的 render() 函数没有实际作用
         // 请勿修改此函数

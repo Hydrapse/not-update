@@ -1,0 +1,14 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="post-form">
+        <form bindsubmit="funPrivatebczzz">
+            <view class="login-box">
+                <view class="avatar-selector">
+                    <at-image-picker compid="{{$compid__146}}"></at-image-picker>
+                </view>
+                <input class="input-nickName" type="text" placeholder="点击输入昵称" value="{{props.formNickName}}" bindinput="funPrivatebdzzz" />
+                <input class="input-nickName" type="text" placeholder="点击输入邀请码" />
+                <at-button compid="{{$compid__147}}">登录</at-button>
+            </view>
+        </form>
+    </view>
+</block>

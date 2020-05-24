@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"logout":"../Logout/index","at-float-layout":"../../npm/taro-ui/dist/weapp/components/float-layout/index","login-form":"../LoginForm/index"}}

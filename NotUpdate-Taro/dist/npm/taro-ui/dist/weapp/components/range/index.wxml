@@ -1,0 +1,10 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="{{rootCls}}" style="{{anonymousState__temp}}" bindtap="handleClick">
+        <view class="at-range__container" style="{{anonymousState__temp2}}">
+            <view class="at-range__rail" style="{{anonymousState__temp3}}"></view>
+            <view class="at-range__track" style="{{anonymousState__temp4}}"></view>
+            <view class="at-range__slider" style="{{anonymousState__temp5}}" catchtouchmove="handleTouchMove" bindtouchend="handleTouchEnd" data-e-touchmove-so="this" data-e-touchmove-a-a="aX" data-e-touchend-so="this" data-e-touchend-a-a="aX"></view>
+            <view class="at-range__slider" style="{{anonymousState__temp6}}" catchtouchmove="handleTouchMove" bindtouchend="handleTouchEnd" data-e-touchmove-so="this" data-e-touchmove-a-a="bX" data-e-touchend-so="this" data-e-touchend-a-a="bX"></view>
+        </view>
+    </view>
+</block>

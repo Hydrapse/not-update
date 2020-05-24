@@ -58,7 +58,7 @@ var ElectricFee = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ElectricFee.__proto__ || Object.getPrototypeOf(ElectricFee)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["$compid__96", "money", "percent"], _this.customComponents = ["EChart"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ElectricFee.__proto__ || Object.getPrototypeOf(ElectricFee)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["$compid__136", "money", "percent"], _this.customComponents = ["EChart"], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(ElectricFee, [{
@@ -77,10 +77,10 @@ var ElectricFee = (_temp2 = _class = function (_BaseComponent) {
       var __prefix = this.$prefix;
       ;
 
-      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__96"),
+      var _genCompid = (0, _taroWeapp.genCompid)(__prefix + "$compid__136"),
           _genCompid2 = _slicedToArray(_genCompid, 2),
-          $prevCompid__96 = _genCompid2[0],
-          $compid__96 = _genCompid2[1];
+          $prevCompid__136 = _genCompid2[0],
+          $compid__136 = _genCompid2[1];
 
       var _props = this.__props,
           percent = _props.percent,
@@ -173,9 +173,9 @@ var ElectricFee = (_temp2 = _class = function (_BaseComponent) {
       _taroWeapp.propsManager.set({
         "echarts": echarts,
         "option": option
-      }, $compid__96, $prevCompid__96);
+      }, $compid__136, $prevCompid__136);
       Object.assign(this.__state, {
-        $compid__96: $compid__96,
+        $compid__136: $compid__136,
         money: money
       });
       return this.__state;

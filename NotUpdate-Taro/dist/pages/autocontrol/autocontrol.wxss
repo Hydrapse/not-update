@@ -1,0 +1,15 @@
+.auto-control {
+  margin: 0 40rpx;
+}
+.factor-area {
+  margin: 30rpx 22rpx 80rpx;
+  padding: 20rpx 32rpx;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  gap: 0;
+  background-color: white;
+  border-radius: 30rpx;
+  box-shadow: 0 2rpx 12rpx 0 rgba(0, 0, 0, 0.05);
+  font-size: 32rpx;
+}

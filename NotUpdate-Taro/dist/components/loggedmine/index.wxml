@@ -1,0 +1,7 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="logged-mine">
+        <image src="{{userInfo.avatar ? userInfo.avatar : avatar}}" class="mine-avatar" bindtap="anonymousFunc0"></image>
+        <view class="mine-nickName">{{userInfo.nickName ? userInfo.nickName : 'NotUpdate ❤'}}</view>
+        <view class="mine-username">{{userInfo.username}}</view>
+    </view>
+</block>

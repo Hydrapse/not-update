@@ -1,0 +1,3 @@
+<block wx:if="{{$taroCompReady}}">
+    <at-button compid="{{$compid__141}}">普通登录</at-button>
+</block>

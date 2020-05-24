@@ -1,1 +1,1 @@
-{"pages":["pages/index/index","pages/devices/ac","pages/devices/hygrothermograph"],"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black","navigationStyle":"custom"}}
+{"pages":["pages/index/index","pages/devices/ac","pages/devices/hygrothermograph","pages/mine/mine","pages/autocontrol/autocontrol"],"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black","navigationStyle":"custom"}}

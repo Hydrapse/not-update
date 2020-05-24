@@ -1,0 +1,9 @@
+.mine-footer {
+  font-size: 28rpx;
+  color: #777;
+  margin-bottom: 20rpx;
+}
+.tuture-motto {
+  margin-top: 40rpx;
+  text-align: center;
+}

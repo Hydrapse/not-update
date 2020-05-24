@@ -1,6 +1,8 @@
 .devices {
-  background: white; }
+  background: white;
+}
 
 .th-calc-setup {
-  padding-top: 60rpx; }
+  padding: 40rpx 22rpx 40rpx;
+}
 

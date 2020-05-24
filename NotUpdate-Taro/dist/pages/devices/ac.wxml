@@ -1,9 +1,17 @@
 <block wx:if="{{$taroCompReady}}">
     <view class="devices" style="{{anonymousState__temp}}">
-        <at-nav-bar compid="{{$compid__57}}"></at-nav-bar>
+        <at-nav-bar compid="{{$compid__82}}"></at-nav-bar>
+        <view style="display: flex; justify-content: space-between; padding:24px 12px 12px"><text style="font-size: 17px">空调温度</text>
+            <at-input-number compid="{{$compid__83}}"></at-input-number>
+        </view>
         <at-list>
-            <at-list-item compid="{{$compid__58}}"></at-list-item>
-            <at-list-item compid="{{$compid__59}}"></at-list-item>
+            <at-list-item compid="{{$compid__84}}"></at-list-item>
+            <at-list-item compid="{{$compid__85}}"></at-list-item>
         </at-list>
+        <picker mode="selector" range="{{selector}}" bindchange="onChange">
+            <at-list>
+                <at-list-item compid="{{$compid__86}}"></at-list-item>
+            </at-list>
+        </picker>
     </view>
 </block>

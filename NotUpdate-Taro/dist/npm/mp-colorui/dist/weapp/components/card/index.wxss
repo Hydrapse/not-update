@@ -1,7 +1,10 @@
 .cu_card__title-line {
   border-bottom: 1rpx solid;
-  padding-bottom: 20rpx; }
+  padding-bottom: 20rpx;
+}
 .cu_card_active {
-  transition: all 0.2s ease-in-out 0s; }
+  transition: all 0.2s ease-in-out 0s;
+}
 .cu_card_active:active {
-    background-color: #b6b6b6; }
+  background-color: #b6b6b6;
+}

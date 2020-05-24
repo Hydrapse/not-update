@@ -9,6 +9,6 @@
                 <user></user>
             </block>
         </block>
-        <at-tab-bar compid="{{$compid__56}}"></at-tab-bar>
+        <at-tab-bar compid="{{$compid__93}}"></at-tab-bar>
     </view>
 </block>

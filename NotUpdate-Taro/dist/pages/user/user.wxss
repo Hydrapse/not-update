@@ -1,3 +1,23 @@
 .user {
   background-color: white;
-  padding: 0 10rpx; }
+  padding: 0 10rpx 100rpx;
+}
+.portrait {
+  padding: 40rpx 40rpx 60rpx;
+  display: flex;
+}
+.nickName {
+  padding-left: 60rpx;
+  padding-top: 35rpx;
+  font-size: 40rpx;
+  color: #333333;
+  font-weight: bold;
+}
+.slider {
+  margin: 40rpx 0 10rpx;
+}
+.domitory {
+  font-size: 26rpx;
+  padding-left: 40rpx;
+  color: gray;
+}
